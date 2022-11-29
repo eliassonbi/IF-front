@@ -4,6 +4,8 @@ import logo from './logo.svg';
 import './App.css';
 import List from './List.js';
 
+
+
 function App() {
         const [contacts, setContacts] = useState([]);
         const [send, setSend] = useState(0);
@@ -12,6 +14,7 @@ function App() {
         const [fromAddress, setFromAddress] = useState("");
         const [toAddress, setToAddress] = useState("");
         const graph = new WeightedGraph();
+        const walletKwatt= new Map()
         
   const handleChangeSend = event => {
         setSend(event.target.value);
@@ -35,6 +38,7 @@ function App() {
     })
 });
 }
+
         graph.addVertex(address[0]);
         graph.addVertex(address[1]);
         graph.addVertex(address[2]);
@@ -60,33 +64,18 @@ function App() {
                 
    
                 async function fetcher() {
-                        const response = await fetch('http://localhost:3001/contacts');        
-                        const contacts = await response.json();
-
-                        setContacts(contacts);
 
                         const responseAddress = await fetch('http://localhost:3001/address');        
                         const address = await responseAddress.json();
                         setAddress(address);
+                        alert(address)
+                    
                 }
-                
-
                 fetcher();
         }, []);
 
   return (
     <div>
-            <ul>
-      {
-              contacts.map(contact => (
-                      <li key={contact.id}>
-                              <p>Name: {contact.name}</p>
-                              <span>Phone: {contact.phone}</span>
-                      </li>
-              ))
-      }
-
-      </ul>
       <div>
         <div>
                 <h1> Shorter path between : {fromAddress} and {toAddress} </h1>
