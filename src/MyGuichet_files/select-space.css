@@ -1,0 +1,291 @@
+@CHARSET "UTF-8";
+
+.space-selector {
+	vertical-align: top;
+}
+
+.space-selector .noitem {
+	margin-top: 20px;
+	font-family: Calibri, sans-serif;
+	font-style: italic;
+}
+
+.space-selector ul {
+	margin: 0;
+	list-style:none;
+}
+
+.space-selector ul a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.space-selector ul li {
+	margin: 22px 0 0;
+	padding: 0;
+}
+
+.space-selector ul li:first-child{
+	margin-top: 0;
+}
+
+.space-btn .space-name {
+	display:block;
+	text-align:left;
+	min-height: 23px;
+	padding: 11px 25px 11px 50px;
+}
+.space-selector .space-btn .space-name {
+	font-size: 1.214em;
+}
+
+.space-selector .space-btn .space-name:after,
+.space-btn .space-name:before {
+	content:'';
+	display: block;
+	width: 23px;
+	height: 30px;
+	min-height: 23px;
+	position: absolute;
+	left: 15px;
+	background: url('../img/layout/icons/spr-spaces-pro-perso.png') -24px top no-repeat;
+	top: 20px;
+	margin-top:-15px;
+}
+
+.space-selector .space-btn.private-space .space-name:after,
+.space-btn.private-space .space-name:before {
+	background-position: left top;
+}
+.space-selector .space-btn .space-name:after {
+	left: 30px;
+	width: 13px;
+	height: 13px;
+	margin-top:0px;
+	display:none;
+}
+
+
+.space-selector ul li .actions-right {
+	text-align: right;
+	padding-top: 5px;
+}
+
+.space-selector .fs-title {
+	color: #ffffff;
+	font-size: 1.428em;  /* 18 / 14 */
+	font-weight: bold;
+	line-height: 1.2em;     /* 24 / 20 */
+	margin: .9em 0 0;
+	padding: .425em 40px;
+	text-shadow: 1px 1px 2px rgba(25,25,25,.5);
+	text-align: center; 
+	float: left;
+}
+
+.space-selector .fs-title.fs-prive{
+	background: #7aa800;
+	background: -moz-linear-gradient(top, #7aa800 0%, #7aa800 45%, #6e9500 83%, #6d9400 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7aa800), color-stop(45%,#7aa800), color-stop(83%,#6e9500), color-stop(100%,#6d9400));
+	background: -webkit-linear-gradient(top, #7aa800 0%,#7aa800 45%,#6e9500 83%,#6d9400 100%);
+	background: -o-linear-gradient(top, #7aa800 0%,#7aa800 45%,#6e9500 83%,#6d9400 100%);
+	background: -ms-linear-gradient(top, #7aa800 0%,#7aa800 45%,#6e9500 83%,#6d9400 100%);
+	background: linear-gradient(to bottom, #7aa800 0%,#7aa800 45%,#6e9500 83%,#6d9400 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aa800', endColorstr='#6d9400',GradientType=0 );
+}
+
+.space-selector .fs-title.fs-pro{
+	background: #00afd7;
+	background: -moz-linear-gradient(top, #00afd7 0%, #00afd7 48%, #00a9d0 60%, #0098ba 83%, #0096b8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00afd7), color-stop(48%,#00afd7), color-stop(60%,#00a9d0), color-stop(83%,#0098ba), color-stop(100%,#0096b8));
+	background: -webkit-linear-gradient(top, #00afd7 0%,#00afd7 48%,#00a9d0 60%,#0098ba 83%,#0096b8 100%);
+	background: -o-linear-gradient(top, #00afd7 0%,#00afd7 48%,#00a9d0 60%,#0098ba 83%,#0096b8 100%);
+	background: -ms-linear-gradient(top, #00afd7 0%,#00afd7 48%,#00a9d0 60%,#0098ba 83%,#0096b8 100%);
+	background: linear-gradient(to bottom, #00afd7 0%,#00afd7 48%,#00a9d0 60%,#0098ba 83%,#0096b8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afd7', endColorstr='#0096b8',GradientType=0 );
+}
+
+.space-selector .fs-content {
+	background: #ebeded;
+	clear: both;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	padding: 27px 26px 31px;
+}
+
+.ll-hidden, .space-selector ul li.ll-hidden{
+	position: absolute;
+	top: -2000px;
+	left: -10000px;
+}
+
+.space-selector .fs-more{
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25em;
+	display: block;
+	margin: 15px -26px -31px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 20px;
+}
+
+.space-selector .fs-more:hover, .space-selector .fs-more:focus{
+	
+}
+.space-btn .is-active,
+.space-btn .is-inactive,
+.space-btn a {
+	display: block;
+	margin: 0 0 1.5em;
+	-webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.44);
+	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.44);
+	background: #ffffff;
+	color: #222222;
+	border: 1px solid #bbbbbb;
+	text-decoration: none;
+	position: relative;
+}
+.space-btn .is-inactive {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity:.7;
+	background:none;
+}
+.ie8 .space-btn .is-inactive {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.space-man-bar.space-btn a{
+	margin: 0 8.5% 0 6%;
+	width: 31.2%;
+	float: left;
+}
+
+.space-btn a:hover, .space-btn a:focus{
+	color: #000000;
+	border-color: #ffffff;
+	-webkit-box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ie_lt9 .space-btn a:hover, .ie_lt9 .space-btn a:focus{
+	border-color: #888888 #dddddd #dddddd #888888;
+	color: #555555;
+	background: #fafafa;
+}
+
+.space-selector .space-btn .space-btn-create .space-name:after{
+	display: block;
+	background-position: -52px -38px;
+}
+
+.space-btn .space-btn-man .space-name:before{
+	width: 25px;
+	background-position: -73px top;
+}
+
+.space-selector .space-btn .space-btn-merge .space-name:before{
+	background-position: -30px -38px;
+	margin-top: -11px;
+	height:13px;
+}
+.space-btn .space-btn-man .space-name:before{
+	background-position: -73px top;
+}
+
+.space-selector .space-btn .space-btn-merge .space-name:before{
+	background-position: -30px -38px;
+	margin-top: -11px;
+	height:13px;
+}
+.space-selector .space-btn .space-btn-merge .space-name:after{
+	display: block;
+	width:25px;
+	left:23px;
+	margin-top: -2px;
+	background-position: -25px -38px;
+}
+.space-selector .space-btn.private-space .space-btn-merge .space-name:before{
+	background-position: -6px -38px;
+}
+.space-selector .space-btn.private-space .space-btn-merge .space-name:after{
+	background-position: -1px -38px;
+}
+
+.space-selector .space-btn .space-btn-delete .space-name:before{
+	background: url('../img/layout/icons/delete_pro_space.png') -24px top no-repeat;
+	background-position: 0px 0px;
+	width: 32px;
+}
+.space-selector .space-btn.private-space .space-btn-delete .space-name:before{
+	background: url('../img/layout/icons/delete_private_space.png') -24px top no-repeat;
+	background-position: 0px 0px;
+	width: 32px;
+}
+
+.space-man-bar.space-btn span:first-child a{
+	/*margin: 0 0 0 8.5%;*/
+	position: relative;
+	left: 50%;
+	margin-left: -17%;
+}
+.space-man-bar.buttons{
+	text-align:left;
+	padding: 1.5em 1.15em;
+}
+/* Invite pending user choice */
+.space-selector ul li.lw-pending .is-active,
+.space-selector ul li.lw-pending a{
+	background: #ebeded !important;
+	box-shadow: none;
+	border: 2px dashed #999;
+}
+
+.space-selector ul li.lw-pending .space-name{
+	color: #333333;
+}
+
+.space-selector ul li.lw-pending-pro .is-active,
+.space-selector ul li.lw-pending-pro a{
+	border-color: #00a2de;
+}
+
+.space-selector ul li.lw-pending-private .is-active,
+.space-selector ul li.lw-pending-private a{
+	border-color: #709c00;
+}
+
+.space-selector ul li.lw-pending .link-waiter:after {
+	content:"";
+	display: table;	
+	clear: both;
+}
+
+.space-selector ul li.lw-pending .actions-right{
+	padding: 0;
+	margin: 5px;
+	float: right;
+}
+
+.space-selector ul li.lw-pending .actions-right form{
+	display: inline-block;
+}
+/**/
+.ie_lt9 .space-selector ul li.lw-pending-pro a:hover, .ie_lt9 .space-selector ul li.lw-pending-pro a:focus{
+	border-color: #00A2DE;
+}
+
+.ie_lt9 .space-selector ul li.lw-pending-private a:hover, .ie_lt9 .space-selector ul li.lw-pending-private a:focus{
+	border-color: #709C00;
+}
+
+.space-man-bar{
+	background: #ebeded;
+	padding: 26px 0 32px;
+	clear: both;
+	margin: 33px 0;
+	font-size: 1.214em;
+	text-align:center;
+}

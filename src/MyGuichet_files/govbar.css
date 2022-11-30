@@ -1,0 +1,124 @@
+.govbar {
+  border-bottom: 1px solid #cccaca;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+  z-index: 30000;
+}
+
+.govbar:before,
+.govbar:after {
+  content: '';
+  display: table;
+}
+
+.govbar:after {
+  clear: both;
+}
+
+.govbar--light {
+  background: #fff;
+}
+
+.govbar--light .govbar-link {
+  color: #222 !important;
+}
+
+.govbar--light .govbar-link:hover,
+.govbar--light .govbar-link:focus {
+  background: #e6e6e6;
+}
+
+.govbar--dark {
+  background: #333;
+}
+
+.govbar--dark .govbar-link {
+  color: #ddd !important;
+}
+
+.govbar--dark .govbar-link:hover,
+.govbar--dark .govbar-link:focus {
+  background: #666;
+}
+
+.govbar-logo {
+  border: 0;
+  display: block;
+  padding: 3px 8px;
+  vertical-align: middle;
+}
+
+.govbar-logo img {
+  border: 0;
+  display: block;
+  height: 40px;
+}
+
+.govbar-links {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.govbar-link {
+  border: 0;
+  border-top: 1px solid #ddd;
+  display: block;
+  font-weight: bold;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.govbar-more {
+  font-weight: normal;
+}
+
+/* for IE only */
+	.ie7 .govbar{
+		display: inline-block;
+	}
+	.ie_lt9 .govbar-logo {
+		float: left;
+	}
+	
+	.ie_lt9 .govbar-links {
+		display: block;
+		float: right;
+		line-height: 30px;
+	}
+	
+	.ie_lt9 .govbar-links li {
+		float: left;
+		margin: 0;
+	}
+	
+	.ie_lt9 .govbar-link {
+		border-top: 0;
+		float: left;
+		min-height: 30px;
+	}  
+
+@media only screen and (min-width: 45em) {
+  .govbar-logo {
+    float: left;
+  }
+
+  .govbar-links {
+    display: block;
+    float: right;
+    line-height: 30px;
+  }
+
+  .govbar-links li {
+    float: left;
+	margin: 0;
+  }
+
+  .govbar-link {
+    border-top: 0;
+    float: left;
+    min-height: 30px;
+  }  
+}

@@ -1,0 +1,140 @@
+/*!
+* Primary Navigation styles
+* ========================================================================
+* Prefix: pn
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Nav layout
+ */
+#primary-nav{
+	clear: both;
+	width: 100%;
+	position: relative;
+	padding: 10px 0 0;
+	background: #dff4f7 url(img/pro/nav/bg-primary-nav.gif) bottom left repeat-x;
+}
+
+.pn-list{
+	margin: 0 auto;
+	overflow:hidden;
+}
+ 
+.pn-list,
+.pn-item{
+	padding: 0;
+	position: relative;
+}
+
+.pn-item{
+	margin: 0 5px;
+	display: inline-block;
+	list-style: none;
+	width: auto;
+	text-align: center;
+	color: #000000;	
+}
+
+.pn-item.is-notified, .pn-item:first-child.is-notified{
+	margin-right: 25px;
+}
+
+.pn-item:first-child{
+	margin: 0 5px 0 0;
+}
+.pn-item:last-child{
+	margin: 0 0 0 5px;
+}
+
+.pn-item .item-txt {
+	height: 1.55em;
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: .4em 15px .3em 15px;
+	line-height: 110%;
+	color: #333;
+	
+	position: relative;
+	
+/*corrige saut au roll over*/
+	font-family: Calibri, sans-serif;
+	font-weight:500;
+}
+
+.pn-item .notif{
+	position: relative;
+	display: inline-block;
+	min-width: .6em;
+	height: 1.4em;
+	line-height: 1.4em;
+	top: 0;
+	margin-left:0.4em;
+	padding: 0 6px;
+	font-size: .9em;
+	font-weight: 700;
+	font-family: Calibri, sans-serif;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	background: #d70013;
+	border: 1px solid #88000C;
+	border-radius: 11px;
+	background-image: -webkit-linear-gradient(top, #d70013, #C20011);
+	background-image: -moz-linear-gradient(top, #d70013, #C20011);
+	background-image: -ms-linear-gradient(top, #d70013, #C20011);
+	background-image: -o-linear-gradient(top, #d70013, #C20011);
+	background-image: linear-gradient(to bottom, #d70013, #C20011);
+	-webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+}
+.pn-item a.item-txt:hover .notif, 
+.pn-item a.item-txt:focus .notif,
+.pn-is-selected a.item-txt .notif {
+	border-color: #fff;
+	box-shadow: 0px 0px 3px rgba(255,255,255,.4);
+}
+
+/*---------------- nav states-------------*/
+.is-notified .item-txt {
+	padding-right: 10px;	
+}
+
+.pn-item a.item-txt:hover, 
+.pn-item a.item-txt:focus,
+.pn-is-selected a.item-txt {
+	box-shadow: inset 3px 3px 5px rgba(0,0,0,.18);
+	font-family: Calibri, sans-serif;
+	/*font-weight:500; Suppression de la graisse au hover pour éviter le clignotement*/
+}
+
+.ie .pn-item a.item-txt,
+.ie .pn-item a.item-txt:hover, 
+.ie .pn-item a.item-txt:focus,
+.ie .pn-is-selected a.item-txt {
+	font-family: Calibri, sans-serif !important;
+	font-weight: normal !important; 
+}
+
+#primary-nav.private-space{
+	background: #d2dd9e url(img/private/nav/bg-primary-nav.gif) bottom left repeat-x ;
+}
+
+.private-space .pn-item a.item-txt:hover, 
+.private-space .pn-item a.item-txt:focus,
+.private-space .pn-is-selected a.item-txt {
+	background: #58781c;
+	color: #ffffff;
+}
+
+.pro-space .pn-item a.item-txt:hover, 
+.pro-space .pn-item a.item-txt:focus,
+.pro-space .pn-is-selected a.item-txt {
+	background: #0086a6;
+	color: #ffffff;
+}
+
+.pn-is-inactive .item-txt{
+	color: #858383 !important;	
+	text-shadow: none;
+}

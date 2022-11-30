@@ -1,0 +1,343 @@
+/*!
+* jQuery jsTree Plugin stylesheet
+* ========================================================================
+* layout for doc-tree
+*/
+
+.jstree {
+    background: #ffffff;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.dct-notree ul, .dct-notree ol,
+.jstree ul, .jstree ol {
+    margin: 0;
+    padding: 0;
+	list-style:none;
+}
+
+.dct-notree li,
+.jstree li {
+    margin: 0;
+	list-style:none;
+	position: relative;
+}
+/* to position the tooltip elelemts inside the respective rows */
+.dct-row > ul > li,
+.dct-row {
+	position: relative !important;
+}
+
+/* tree icons */
+.dct-notree .icon, 
+.jstree .jstree-icon { 
+    background-color:transparent;
+    background-image:url("img/layout/icons/jstree-doctree/d.png"); 
+    background-repeat:no-repeat; 
+    float: left;
+    margin: 5px 0 0;
+}
+
+.jstree-open > .jstree-icon { background-position:-72px 0; }
+.jstree-closed > .jstree-icon { background-position:-54px 0; }
+.jstree-leaf > .jstree-icon { background-position:-36px 0; }
+
+.jstree-dct .jstree-hovered { background:#e7f4f9; }
+.jstree-dct .jstree-clicked { background:#beebff; }
+
+.jstree-dct .jstree-icon { cursor: pointer; }
+.jstree-dct .jstree-leaf > .jstree-icon { cursor:auto;}
+.jstree-dct .jstree-loading .jstree-icon { background:url("img/layout/icons/jstree-doctree/throbber.gif") center center no-repeat !important; }
+
+.jstree-no-dots .jstree-open > .jstree-icon { background-position: -18px 0; }
+.jstree-no-dots .jstree-closed > .jstree-icon { background-position: 0 0; }
+.jstree-no-dots .jstree-leaf > .jstree-icon { background-position: 18px 18px; }
+
+.btn .jstree-icon,
+.jstree-dct .jstree-no-icons .jstree-icon { display:none;}
+
+ /*
+.jstree a,
+.jstree span {
+ display: inline;
+ padding: 0;
+ }
+ 
+.jstree a.btn,
+.jstree span.btn {
+ padding: 0.45em 0.7em;
+ }
+ */
+ 
+.jstree .btn + .btn {
+    margin-left: .5em !important;
+}
+
+.jstree .btn + .form-inline {
+	margin-left: .3em !important;
+}
+
+.dct-lvl1 { 
+    font-size: .9em; 
+    }
+
+.dct-title { 
+    padding-top: 4px;
+    margin-bottom: 10px; 
+		
+	margin-right: 14em;
+}
+
+.dct-title a {
+    color: #003399;
+    text-decoration: underline;
+	font-family: Calibri, Lucida, sans-serif;
+    font-weight: 700;
+}
+
+.ie .dct-title a,
+.ie .dct-title span {
+	font-family: Calibri, Lucida, sans-serif;
+	font-weight: normal;
+}
+
+.dct-title span {
+	font-family: Calibri, Lucida, sans-serif;
+	font-weight: bold;
+}
+
+.dct-title a:focus {
+    border: none;
+    color: #003399;
+    box-shadow: none;
+    outline: 1px dotted;
+    text-decoration: underline !important;
+}
+
+.dct-actions {
+    margin-bottom: 0;
+    clear: both;
+    padding-top: 7px;
+}
+
+.dct-line-summary{
+	position: absolute;
+	right: 18px;
+	top: .75em;
+	max-width: 13em;
+	white-space: normal;
+}
+
+.dct-line-summary p{
+	font-family: Calibri, Lucida, sans-serif;
+	font-style: italic;
+	margin-bottom: .5em;
+	/*line-height:1.65em; */
+	line-height: 1.3em;
+	text-align: right;
+}
+
+.dct-line-summary .dct-sum-red, .dct-line-summary .dct-sum-green{
+	position: relative;
+	font-family: Calibri, Lucida, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	margin-right: 32px;
+	
+}
+
+.ie .dct-line-summary .dct-sum-red, 
+.ie .dct-line-summary .dct-sum-green{
+	font-family: Calibri, Lucida, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.dct-line-summary .dct-tooltip span{
+	border-bottom: 1px solid #afb8be;
+}
+.dct-line-summary .dct-tooltip span.dct-sum-icon{
+	border-bottom: none;
+}
+
+.dct-sum-green{
+	color: #045001;
+}
+
+.dct-line-summary .dct-sum-icon{
+	background: url('img/layout/icons/icons.png') -118px top no-repeat;
+	display: block;
+	position: absolute;
+	right: -32px;
+	top: 0;
+	/*float: right;*/
+	width: 25px;
+	height: 22px;
+	margin-left: .5em;
+}
+.dct-sum-red .dct-sum-icon{
+	background-position: -118px top;
+}
+
+.dct-sum-green .dct-sum-icon{
+	background-position: -21px top;
+}
+
+.dct-date {
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.dct-status {
+    padding: 0 !important;
+}
+
+.dct-status:before {
+	content: " - ";
+}
+
+.dct-content {
+    background: #f4f4f4;
+    background: -moz-linear-gradient(top, #f4f4f4 0%, #f4f4f4 66%, #e3e3e3 100%);	
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(66%,#f4f4f4), color-stop(100%,#e3e3e3));	
+    background: -webkit-linear-gradient(top, #f4f4f4 0%, #f4f4f4 66%, #e3e3e3 100%);
+    background: -o-linear-gradient(top, #f4f4f4 0%, #f4f4f4 66%, #e3e3e3 100%);
+    background: -ms-linear-gradient(top, #f4f4f4 0%, #f4f4f4 66%, #e3e3e3 100%);
+    background: linear-gradient(top, #f4f4f4 0%, #f4f4f4 66%, #e3e3e3 100%);
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 3px solid #00afd7;
+    min-height:1.6em;
+    padding: .75em 18px 1em 65px;
+}
+.no-js .dct-content {
+	position:relative;
+}
+.dct-lvl1 .dct-content {
+    background: #f1f6f9;
+    border-bottom: 1px solid #dce7f0;
+    border-top: none;
+    padding-left: 110px;
+}
+
+.dct-lvl2 .dct-content {
+    background: #fff;
+    border: none;
+	border-bottom: 1px solid #f0f0f0;
+    padding-left: 155px;
+}
+
+.dct-notree .dct-content {
+    padding-left: 0;
+    padding-left: 65px;
+}
+
+.dct-row > .jstree-icon {
+    margin-top: 15px;
+    }
+
+.dct-lvl1 > .dct-row {
+	padding: .5em 0;
+}
+
+.dct-lvl1 .jstree-icon {
+    margin-left: 45px;
+    margin-top: 15px;
+}
+
+.jstree-dct .jstree-arialink{ background:transparent !important;}
+.jstree-dct .jstree-link:focus  { outline:dotted 1px !important;}
+.jstree-dct .jstree-leaf .jstree-arialink:focus ins { 
+	background-position: 0 -72px !important;
+}
+
+
+.jstree-link .jstree-icon, .jstree-span .jstree-icon {
+    background: url(img/layout/icons/jstree-doctree/doctypes.png) no-repeat;
+    float: left;
+    height: 33px;
+    left: -40px;
+    margin-left: 0;
+    margin-right: -40px !important;
+    margin-top: -4px;
+    position: relative;
+    width: 24px;
+	text-decoration: none;
+}
+
+li[data-rel=justificatif] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=justificatif] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: 0 0; }
+li[data-rel=annexe] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=annexe] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: -24px 0; }
+li[data-rel=formulaire] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=formulaire] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: -48px 0; }
+
+li[data-rel=justificatifs] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=justificatifs] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: 0 -33px; }
+li[data-rel=annexes] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=annexes] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: -24px -33px; }
+li[data-rel=formulaires] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=formulaires] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: -48px -33px; }
+
+li[data-rel=nojustificatif] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=nojustificatif] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: 0 -66px; }
+li[data-rel=noannexe] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=noannexe] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: -24px -66px; }
+li[data-rel=noformulaire] > .dct-content > .dct-title > .jstree-link > .jstree-icon,
+li[data-rel=noformulaire] > .dct-content > .dct-title > .jstree-span > .jstree-icon { background-position: -48px -66px; }
+
+.dct-lvl2 > .dct-row { background: #ffffff; }
+
+.dct-more {
+    text-align: center;
+    display: block;
+    background: #f4f4f4;
+    margin-bottom: 0;
+    padding: .5em 0;
+    border-top: 1px solid #79a3c4;
+}
+
+.dct-more-link {
+    font-size: 1.1em;
+}
+
+.doc-foot{
+	border: 1px solid #e1e1e1;
+	background: #ffffff;
+	margin: 2em 0 1em 0;
+	float: left;
+}
+
+.doc-foot .doc-foot-title{
+	background: #f2f2f2;
+	color: #333333;
+	float: left;
+	font-size: 1em;
+	line-height: 16px;
+	padding: .5em;
+	margin: 0;
+}
+
+.doc-foot ul{
+	margin: 0;
+	padding: 7px .5em 2px;
+	float:left;
+}
+
+.doc-foot li{
+	display: inline-block;
+	margin: 0 1.5em 0 0;
+	padding: 0;
+}
+
+.doc-foot figure img{
+	margin-right: .2em;
+	float: left;
+}
+
+.doc-foot figure figcaption{
+	color: #000000;
+	font-size: .9em;
+	vertical-align: text-top;
+	line-height: 16px;
+	float: left;
+}

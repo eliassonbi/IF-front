@@ -1,0 +1,91 @@
+/*!
+* Grid system
+* ========================================================================
+* column layout
+*/
+
+
+.l-grid:before,
+.l-grid:after,
+.l-grid .l-gr-row:before,
+.l-grid .l-gr-row:after {
+	content:"";
+	display: table;	
+	clear: both;
+}
+
+/*
+.l-grid,
+.l-gr-col {
+    *height: 1%;
+    *overflow: hidden;
+    *zoom:1;
+}
+*/
+
+.l-gr-col {
+	float: left;
+	margin-left: 20px;
+}
+
+.l-gr-col:first-child {
+    margin-left: 0 !important;
+}
+
+.l-grid8 .l-gr-col1{width: 107px;}
+.l-grid8 .l-gr-col2{width: 234px;}
+.l-grid8 .l-gr-col3{width: 361px;}
+.l-grid8 .l-gr-col4{width: 488px;}
+.l-grid8 .l-gr-col5{width: 615px;}
+.l-grid8 .l-gr-col6{width: 742px;}
+.l-grid8 .l-gr-col7{width: 869px;}
+.l-grid8 .l-gr-col8{width: 996px;}
+
+.l-grid8 .l-gr-offset1{margin-left: 127px;}
+.l-grid8 .l-gr-offset2{margin-left: 254px;}
+.l-grid8 .l-gr-offset3{margin-left: 381px;}
+.l-grid8 .l-gr-offset4{margin-left: 508px;}
+.l-grid8 .l-gr-offset5{margin-left: 635px;}
+.l-grid8 .l-gr-offset6{margin-left: 762px;}
+.l-grid8 .l-gr-offset7{margin-left: 889px;}
+
+/* -fluid 8 col grid with approx 20px gutter -*/
+.l-grid8-f .l-gr-col{margin-left: 2%;}
+.l-grid8-f .l-gr-col1{width: 10.75%;}
+.l-grid8-f .l-gr-col2{width: 23.50%;}
+.l-grid8-f .l-gr-col3{width: 36.25%;}
+.l-grid8-f .l-gr-col4{width: 49.00%;}
+.l-grid8-f .l-gr-col5{width: 61.25%;}
+.l-grid8-f .l-gr-col6{width: 74.50%;}
+.l-grid8-f .l-gr-col7{width: 87.25%;}
+.l-grid8-f .l-gr-col8{width: 100%;}
+.l-grid8-f .l-gr-col:first-child{margin-left: 0;}
+
+.l-grid8-f .l-gr-col.l-gr-offset1{margin-left: 12.75% !important;}
+.l-grid8-f .l-gr-col.l-gr-offset2{margin-left: 25.50% !important;}
+.l-grid8-f .l-gr-col.l-gr-offset3{margin-left: 38.25% !important;}
+.l-grid8-f .l-gr-col.l-gr-offset4{margin-left: 51.00% !important;}
+.l-grid8-f .l-gr-col.l-gr-offset5{margin-left: 63.75% !important;}
+.l-grid8-f .l-gr-col.l-gr-offset6{margin-left: 76.50% !important;}
+.l-grid8-f .l-gr-col.l-gr-offset7{margin-left: 89.25% !important;}
+
+/*-handling of nested cols-*/
+.l-grid.l-grid8-f .l-gr-col6 .l-gr-col{margin-left: 2.68%;}
+.l-grid.l-grid8-f .l-gr-col6 .l-gr-col3{width: 48.6%;}
+.l-grid.l-grid8-f .l-gr-col6 .l-gr-col.l-gr-col6{margin-left: 2%;}
+
+/*- alignment in cells -*/
+.l-gr-center{text-align:center;}
+.l-gr-right{text-align:right;}
+
+
+/* -fluid 8 col grid with no gutter */
+.l-grid8-f-no-margin .l-gr-col{margin-left: 0%;}
+.l-grid8-f-no-margin .l-gr-col1{width: 12.5%;}
+.l-grid8-f-no-margin .l-gr-col2{width: 25%;}
+.l-grid8-f-no-margin .l-gr-col3{width: 33.33%;}
+.l-grid8-f-no-margin .l-gr-col4{width: 50%;}
+.l-grid8-f-no-margin .l-gr-col5{width: 66.66%;}
+.l-grid8-f-no-margin .l-gr-col6{width: 75%;}
+.l-grid8-f-no-margin .l-gr-col7{width: 87.5%;}
+.l-grid8-f-no-margin .l-gr-col8{width: 100%;}

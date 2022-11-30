@@ -1,0 +1,94 @@
+/*!
+* Styles for "Gestion de l'espace" 
+* ========================================================================
+* 
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Corporation id layout
+ */
+ 
+.corp-id{
+	margin: 2em 0 0;
+}
+
+.co-logo{
+	display: block;
+	width: auto;
+	margin: 0 auto;
+	background: #ffffff;
+	border: 1px solid #939fb4;
+}
+
+.co-logo-btn{
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: .85em;
+	color: #003399;
+	margin-top: 10px;
+	text-decoration: underline;
+}
+
+.co-name{
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+	font-family: Calibri, sans-serif;
+}
+
+.ie .co-name {
+	font-family: Calibri, sans-serif;
+	font-weight: normal;
+}
+
+.co-name-aka{
+	margin: 0;
+	font-size: .9em;
+}
+
+.co-completion{
+	font-size: .9em;
+	margin: 0;
+}
+
+.co-completion span{
+	color: #1166a0;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+	-moz-text-stroke: 1px #ffffff;
+	-o-text-stroke: 1px #ffffff;
+	-webkit-text-stroke: 1px #ffffff;
+	text-stroke: 1px #ffffff;
+	font-size: 6em;
+	display: block;
+	font-family: Calibri, sans-serif;
+	font-weight: bold;
+	line-height: .9em;
+}
+
+.ie .co-completion span{
+	font-family: Calibri, sans-serif;
+	font-weight: normal;
+}
+
+.co-completion span span{
+	font-size: .4em;
+	display: inline;
+}
+
+.co-tip{
+	padding: 0 10px;
+	color: #333333;
+	margin: 0;
+	line-height: 1.5em;
+}
+
+
+/*---------------------- input[submit] buttons style, to be moved 
+(and overwrite old ones) to forms.css if ok-----------------------*/
+
+.tabs-form .btn-top-corner {
+	position: absolute;
+	top: -1em;
+	right: 0;
+}

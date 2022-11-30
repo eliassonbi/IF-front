@@ -2,25 +2,15 @@
   text-align: center;
 }
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-b{
-  color: #61dafb;
-
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-iframe {
-  width:100%;
-  height:720px;
 }
 
 .App-header {

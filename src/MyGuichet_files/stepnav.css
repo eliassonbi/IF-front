@@ -1,0 +1,178 @@
+/*!
+* Step navigation styles
+* ========================================================================
+* stn
+* 
+* 
+*/
+
+
+.stepnav{
+	margin: 0 0 1em;
+	padding: 0;
+	display:inline-table;
+	list-style:none;
+	/*overflow: hidden;*/
+}
+
+.stepnav>li{
+	display:inline;
+	float:left;
+	
+	background: #f1f1f1;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+	
+	height:3em;
+	padding: 0 2em;
+	margin: 0;
+	position:relative;
+}
+
+.csstransforms .stepnav>li{
+	background: #f1f1f1;
+	background: -moz-linear-gradient(top, #fdfdfd 0%, #e6e6e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#e6e6e6));
+	background: -webkit-linear-gradient(top, #fdfdfd 0%,#e6e6e6 100%);
+	background: -o-linear-gradient(top, #fdfdfd 0%,#e6e6e6 100%);
+	background: -ms-linear-gradient(top, #fdfdfd 0%,#e6e6e6 100%);
+	background: linear-gradient(to bottom, #fdfdfd 0%,#e6e6e6 100%);
+}
+
+.stepnav>li:after{
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2000;
+	margin:0px;
+	height: 3em;
+	width: 1.05em;
+	padding:0;
+	line-height: 1.8em;
+	top: 0;
+	right: -1.05em;
+	background: url("img/pro/bg-stepnav-pointer-f1.png") right center no-repeat;
+}
+
+.stepnav>li.stepnav-active:after{
+	background: url("img/pro/bg-stepnav-pointer-c.png") right center no-repeat;
+}
+
+.stepnav>li.stepnav-disabled:after{
+	background: url("img/pro/bg-stepnav-pointer-f.png") right center no-repeat;
+}
+
+.csstransforms .stepnav>li:after{
+	content:'';
+	margin:0px;
+	z-index:10;
+	display:block;
+	position:absolute;
+	height: 3em;
+	width: 1.75em;
+	top: -5px;
+	right: -1.75em;
+	padding:0;
+	height: 1.75em;
+	line-height: 1.8em;
+	width: 1.75em;
+	top: .625em;
+	right: -.9em;
+	background: #f1f1f1;
+	background: -moz-linear-gradient(-210deg, #fdfdfd 0%, #e6e6e6 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fdfdfd), color-stop(100%,#e6e6e6));
+	background: -webkit-linear-gradient(-45deg, #fdfdfd 0%,#e6e6e6 100%);
+	background: -o-linear-gradient(-45deg, #fdfdfd 0%,#e6e6e6 100%);
+	background: -ms-linear-gradient(-210deg, #fdfdfd 0%,#e6e6e6 100%);
+	background: linear-gradient(-210deg, #fdfdfd 0%,#e6e6e6 100%);
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	-webkit-transform: rotate(55deg) skewX(20deg);
+	-o-transform: rotate(55deg) skew(20deg); 
+	-moz-transform: rotate(55deg) skewX(20deg); 
+	-ms-transform: rotate(55deg) skew(20deg);
+	transform: rotate(55deg) skew(20deg);
+}
+
+.stepnav>li:last-child:after{
+	display: none;
+}
+
+.stepnav>li:first-child{
+	border-radius: 5px 0 0 5px;
+	border-left: 1px solid #999;
+}
+
+.stepnav>li:last-child{
+	border-radius: 0 5px 5px 0;
+	border-right: 1px solid #999;
+}
+
+.stepnav>li>a, .stepnav>li>a:active{
+	color: #000;
+	text-decoration: none;
+}
+
+.stepnav>li>a:hover, .stepnav>li>a:focus{
+	color: #000;
+	text-decoration: underline;
+}
+
+.stepnav>li.stepnav-disabled{
+	border-color: #ccc;
+	background: #fff;
+}
+
+.stepnav-disabled{
+	color: #969696;
+	text-decoration: none;
+}
+
+.csstransforms .stepnav>li.stepnav-disabled:after{
+	border-color: #ccc;
+	background: #fff;
+}
+
+
+.stepnav>li:last-child.stepnav-disabled{
+	border-color: #ccc;
+}
+
+.stepnav>li.stepnav-active{
+	background: #ccc;
+	background: -moz-linear-gradient(top, #999999 0%, #cccccc 10%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(10%,#cccccc));
+	background: -webkit-linear-gradient(top, #999999 0%,#cccccc 10%);
+	background: -o-linear-gradient(top, #999999 0%,#cccccc 10%);
+	background: -ms-linear-gradient(top, #999999 0%,#cccccc 10%);
+	background: linear-gradient(to bottom, #999999 0%,#cccccc 10%);
+}
+
+.csstransforms .stepnav>li.stepnav-active:after{
+	background: #ccc;
+
+}
+
+.stepnav-hidden{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.stepnav-stepno{
+	display: block;
+	font-size: 1.25em;
+	line-height: 1.25em;
+	text-align: center;
+	margin: .1em 0 .1em 0;
+}
+
+.stepnav-stepname{
+	display: block;
+	font-size: .8em;
+	line-height: .8em;
+	text-align: center;
+}

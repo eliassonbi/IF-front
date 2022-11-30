@@ -1,0 +1,87 @@
+/*!
+* Statuts styles
+* ========================================================================
+* status
+* 
+* 
+*/
+.status {
+	margin-bottom:1em;
+	}
+.status:before,
+.status:after {
+	content:"";
+	display: table;	
+	clear: both;
+}
+
+
+.status-title{
+	color: #074168;
+	margin-top: 0;
+	font-family: Calibri,'Lucida Grande','Lucida Sans',Verdana,sans-serif;
+	font-style: italic;
+}
+
+.ie .status-title{
+	font-family: Calibri,'Lucida Grande','Lucida Sans',Verdana,sans-serif;
+	font-style: normal;
+}
+
+.status-status{
+	font-family: Calibri,'Lucida Grande','Lucida Sans',Verdana,sans-serif;
+	color: #333;
+	font-size: 1.15em;
+	line-height: 1.15;
+	margin: 30px 5px 0 0;
+}
+
+.status-ico{
+	display: block;
+	width: 76px;
+	height: 76px;
+	float: left;
+	margin-right: .3em;
+	background: url('img/layout/icons/icons.png') left -74px no-repeat;
+	font-family: Calibri,'Lucida Grande','Lucida Sans',Verdana,sans-serif;
+	font-style: italic;
+}
+
+.ie .status-ico{
+	font-family: Calibri,'Lucida Grande','Lucida Sans',Verdana,sans-serif;
+	font-style: normal;
+}
+
+.status-ico-prep{
+	background-position: left -74px;
+}
+
+.status-ico-sent{
+	background-position: -77px -74px;
+}
+
+.status-ico-corr{
+	background-position: -155px -74px;
+}
+
+.status-ico-clos{
+	background-position: -231px -74px;
+}
+
+.status-ico-gree{
+	background-position: -307px -74px;
+}
+
+.status-act-intro{
+	margin-bottom: .2em;
+	min-height: 100px;
+}
+.status-act-list{
+	margin-top:2.5em;
+}
+.status-action{
+	list-style: none;
+	background: url('img/layout/icons/status-bullet.gif') left .45em no-repeat;
+	padding-left: 12px;
+	margin: 0;
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html dir="ltr" lang="en" class="no-js ie ie_lt7 ie_lt8 ie_lt9"> <![endif]-->
+<!--[if IE 7]> <html dir="ltr" lang="en" class="no-js ie ie7 ie_lt8 ie_lt9"> <![endif]-->
+<!--[if IE 8]> <html dir="ltr" lang="en" class="no-js ie ie8 ie_lt9 ie_gt7"> <![endif]-->
+<!--[if IE 9]> <html dir="ltr" lang="en" class="no-js ie ie9 ie_gt7 ie_gt8"> <![endif]-->
+<!--[if gt IE 9]> <html dir="ltr" lang="en" class="no-js ie ie_gt9"> <![endif]-->
+<!--[if !IE]><!-->
+<html dir="ltr" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths fullfileapi" lang="en"><!--<![endif]--><head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		
+		<title>
+			MyGuichet
+		</title>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<link rel="shortcut icon" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/favicon.ico">
+		<link rel="shortcut icon" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/apple-touch-icon-57x57-precomposed.png">
+		<link rel="apple-touch-icon" href="https://www.services-publics.lu/fpgun-iep/css/img/layout/favicons/apple-touch-icon.png">
+		
+	    <link media="screen" type="text/css" rel="stylesheet" href="MyGuichet_files/jquery.ui.all.css">
+		
+	    <link href="MyGuichet_files/master.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/print.css" media="print" type="text/css" rel="stylesheet">
+	    
+	    <link href="MyGuichet_files/forms.css" media="screen" type="text/css" rel="stylesheet">
+	
+	    <link href="MyGuichet_files/datatables.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/jstree.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/jstree-doctree.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/top.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/primary-nav.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/secondary-nav.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/documents.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/content.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/columns.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/fonts.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/onglets.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/manage-space.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/modales.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/progress.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/statuts.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/stepnav.css" media="screen" type="text/css" rel="stylesheet">
+		<link href="MyGuichet_files/govbar.css" media="screen" type="text/css" rel="stylesheet">
+		<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+		<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	
+	    <link href="MyGuichet_files/select-space.css" media="screen" type="text/css" rel="stylesheet">
+	    <link href="MyGuichet_files/jquery.fileupload.css" media="screen" type="text/css" rel="stylesheet">
+
+	    <link href="MyGuichet_files/animate.css" media="screen" type="text/css" rel="stylesheet">
+
+	    <!-- Custom Guichet CSS -->
+	    <link href="MyGuichet_files/guichet.css" media="screen" type="text/css" rel="stylesheet">
+	
+		
+			<!-- CSS for private space -->
+			<link href="MyGuichet_files/private.css" media="screen" type="text/css" rel="stylesheet">
+		
+		
+	
+		<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="/fpgun-iep/css/ie7.css" />
+		<![endif]-->
+		<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="/fpgun-iep/css/ie8.css" />
+		<![endif]-->
+		<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="/fpgun-iep/css/ie9.css" />
+		<![endif]-->
+
+		<script src="MyGuichet_files/modernizr-2.0.6.js"></script>
+		
+		<script type="text/javascript" src="MyGuichet_files/jquery-1.7.1.min.js"></script>
+		 
+	    <script type="text/javascript" src="MyGuichet_files/globalize.js"></script> 
+	    
+	    <!-- Define globalize for user language -->
+	    
+	    
+		
+	    	<script type="text/javascript" src="MyGuichet_files/globalize.culture.en-GB.js"></script>
+	    	<script type="text/javascript" src="MyGuichet_files/jquery.progress.globalize.en-GB.js"></script>  
+	    	<script type="text/javascript" src="MyGuichet_files/jquery.globalize-jscripts.en-GB.js"></script> 
+	    
+	    
+		
+		<script type="text/javascript" src="MyGuichet_files/jquery.scripts.js"></script>
+		
+		<script type="text/javascript" src="MyGuichet_files/fileSizeValidation.js"></script>
+	</head>
+	<body class="">
+
+    <div id="govbar" class="govbar govbar--light">
+      <a href="https://gouvernement.lu/" target="_blank" rel="noopener noreferrer" class="govbar-logo" title="Government of the Grand Duchy of Luxembourg (New window)">
+        <img src="MyGuichet_files/gov-light.png" alt="Government of the Grand Duchy of Luxembourg"></a>
+      <ul class="govbar-links">
+        <li>
+          <a class="govbar-link" href="https://luxembourg.public.lu/" target="_blank" rel="noopener noreferrer" title="luxembourg.lu (New window)">luxembourg.lu</a>
+        </li>
+        <li>
+          <a class="govbar-link" href="https://guichet.public.lu/" target="_blank" rel="noopener noreferrer" title="guichet.lu (New window)">guichet.lu</a>
+        </li>
+        <li>
+          <a class="govbar-link" href="https://gouvernement.lu/" target="_blank" rel="noopener noreferrer" title="gouvernement.lu (New window)">gouvernement.lu</a>
+        </li>
+        <li>
+          <a class="govbar-link govbar-more" href="https://etat.public.lu/" target="_blank" rel="noopener noreferrer" title="Directory of public Luxembourg websites (New window)">Other sites</a>
+        </li>
+      </ul>
+    </div>
+		<div id="body-wrapper">
+			<div id="wrapper">
+				
+
+<header id="header-wrap" role="banner">
+	<div id="page-banner">
+		<div class="page-width">
+			<h1 class="pb-title">
+				<a class="pb-link" href="https://www.services-publics.lu/fpgun-iep/jsp/display_home.action" title="Return to homepage">
+					<img class="pb-logo" alt="MyGuichet" src="MyGuichet_files/logo-guichet.png">
+				</a>
+			</h1>
+			<ul class="pb-connect">
+				
+					<li class="pb-mobile">
+						<a href="https://www.services-publics.lu/fpgun-iep/jsp/generate_mob_authorization_qrcode.action" class="pb-mobile-btn">Link a device</a>
+					</li>
+				
+
+				<li class="pb-profile">
+					<a class="pb-pr-btn has-pulldown-btn" href="#" title="Show more details on the current login used" aria-haspopup="true" aria-owns="ui-popup-0">
+						<span class="pb-pr-title">CTIE</span>	
+					<span class="pulldown-btn"><span></span></span></a>
+					
+					<div class="pb-pr-details pulldown ui-popup" id="ui-popup-0" role="dialog" aria-hidden="true" aria-expanded="false" style="display: none;">
+						<form id="_" name="_" action="/fpgun-iep/jsp/#.action" method="post" class="form-waiter" style="position: relative;">
+							<div class="pb-pr-det-wrapper">
+								<div class="pb-pr-id" style="margin-bottom: -1px;">
+									ID card: 00765025705513046170 (Signing Server Private)
+								</div>
+								<div class="pb-pr-id" style="margin-top: 0px;">
+									Last login: 09/30/2022 08:28
+								</div>
+							</div>
+						</form>
+
+
+
+					</div>
+				</li>
+				
+				<li class="pb-lang">
+					<ul class="nav-langswitch">
+		
+								<li>
+									<a hreflang="fr" title="fr" class="changeLanguage">FR</a>
+								</li>						
+	
+								<li>
+									<a hreflang="de" title="de" class="changeLanguage">DE</a>
+								</li>
+									
+								<li class="nav-activeitem">
+									<span class="nav-langswitch-active hreflang-en" lang="en">EN</span>
+								</li>
+					</ul>
+				</li>
+				
+				<li class="pb-help">
+						<a class="pb-help-btn" target="_blank" href="http://www.guichet.public.lu/myguichet/en/aide/" title="Go to the help section"> Help</a>
+				</li>
+				<li class="pb-logout">
+					<form id="logoutForm" name="logoutForm" action="/fpgun-iep/jsp/logout.action" method="post" class="form-waiter" style="display: inline-block;">
+						<a href="https://www.services-publics.lu/fpgun-iep/jsp/display_confirm_modal.action?confirmModalQuestion=Are+you+sure+you+want+to+log+off%3F&amp;confirmModalMainButtonLabel=Log+off&amp;confirmFormId=logoutForm" class="pb-logout-btn modal-trigger" title="Close session 'Yannis Erwan Samy Belkebir' and return to homepage" data-modale="displayConfirmLogoutModal">Log off</a>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="modal" id="displayConfirmLogoutModal" title="Close session 'Yannis Erwan Samy Belkebir' and return to homepage"></div>
+				<div id="page-wrap">
+<div id="space-bar" class="sb-private">
+	<div class="page-width">
+  	<h1 class="sb-space-title">Private eSpace</h1>
+		<nav class="sb-nav" role="navigation">
+			<ul class="sb-taskbar clearfix">
+				<li class="sb-task sb-space">
+					<a class="sb-select pulldown-round has-pulldown-btn" href="#" title="Show all eSpaces you can access" aria-haspopup="true" aria-owns="sb-pulldown-01">
+						<img class="sb-select-icon" alt="Select an eSpace" src="MyGuichet_files/window.png">
+						<span class="sb-pointer"></span>
+					<span class="pulldown-btn"><span></span></span></a>
+					<div id="sb-pulldown-01" class="sb-pulldown pulldown-right ui-popup" role="dialog" aria-hidden="true" aria-expanded="false" style="display: none;">
+						
+							<ul class="p-cat-lvl0">
+								
+									<li class="p-menu-item p-private">
+										<span class="p-menu-title">Private eSpace</span>
+															
+											<ul class="">
+												
+													
+												
+												<li>
+													
+														<a href="https://www.services-publics.lu/fpgun-iep/jsp/select_private_space.action?privateSpaceId=585498" class="p-cat-elem is-selected">CTIE</a>
+													
+													
+													
+												</li>
+											</ul>
+										
+									</li>
+								
+								
+							</ul>
+							
+							<a href="https://www.services-publics.lu/fpgun-iep/jsp/display_manage_spaces.action" class="p-manage">Manage my eSpaces</a>
+						
+						
+					</div>
+				</li>
+				<li class="sb-task sb-firm">
+					<span class="sb-select sb-select-large">
+						<span class="sb-title">
+							<a href="https://www.services-publics.lu/fpgun-iep/jsp/display_private_signage.action" title="Access my profile">CTIE</a>
+						</span>
+					</span>
+				</li>
+			</ul>
+		</nav>			
+	</div>		
+</div>
+							
+	<nav id="primary-nav" class="private-space" role="navigation">
+ 	 	<!-- Comments around the list elements are there to prevent the inline-block whitespace bug, DO NOT REMOVE -->
+ 		<ul class="pn-list page-width"><!-- 
+			
+				 --><li class="pn-item pn-is-selected">
+						<a class="item-txt link-waiter" href="">
+							I Produce 
+						</a>
+					</li><!--	
+			
+				 --><li class="pn-item pn-is-active">
+						<a class="item-txt link-waiter" href="">I Consume</a>
+					</li><!--
+			
+				 --><li class="pn-item pn-is-active">
+						<a class="item-txt link-waiter" href="">MykWh Wallet</a>
+					</li><!--		
+				
+					--><li class="pn-item pn-is-active">
+			 				<a class="item-txt link-waiter" href="">MyEuros Wallet</a>
+					</li><!--
+								
+					--><li class="pn-item pn-is-active">
+			 				<a id="privateCommunicationTab" class="item-txt link-waiter" href="">MyCO2 Wallet</a>
+					</li><!--
+					
+				--><li class="pn-item pn-is-active" style="float:right;">
+				 		<a class="item-txt link-waiter" href="">Profile of CTIE</a>
+					</li><!--
+				
+			-->
+		</ul>
+ 	</nav>		
+					<section class="main-wrap page-width" role="main">
+
+<header class="main-content-header compact clearfix">
+	<h1 class="nostrapline">
+		Administration Energy Production and Consumption
+	</h1>
+</header>
+
+<div class="main-content has-right-box">
+	<div class="l-grid l-grid8-f-no-margin">	
+		<div class="l-gr-row"> 
+			<div class="l-gr-col l-gr-col6">
+
+<div class="l-gr-col l-gr-col2">
+	<p class="mc-refnumber">
+		Ref.:
+		CTIE-Public-Blochain-Node-12
+	</p>
+</div>
+
+<div class="l-gr-col l-gr-col6">
+	<p class="mc-refnumber">
+			Consumption snapshot
+			<time class="ps-time" datetime="30/09/2022 08:28:19">30/09/2022</time>
+	</p>
+</div>
+
+<div class="container">
+	<h2>My forecast data</h2>
+	<div class="row">
+	  	<div class="col-sm">
+				<div class="col-sm">
+					<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+						<script type="text/javascript">
+						google.charts.load('current', {'packages':['corechart', 'bar']});
+						google.charts.setOnLoadCallback(drawStuff);
+						function drawStuff() {
+							var chartDiv = document.getElementById('chart_div');
+							var data = google.visualization.arrayToDataTable([
+							['kWh', 'Production', 'Consumption'],
+							['Monday', 6000, 8000],
+							['Tuesday', 7500, 8000],
+							['Wenesday', 8000, 7000],
+							['Thursday', 5000, 7000],
+							['Friday', 6000, 7500],
+							['Saturday', 8000, 1000],
+							['Sunday', 8500, 1000]
+							]);
+
+							var materialOptions = {
+							width: 1000,
+							chart: {
+							},
+							axes: {
+								y: {
+								distance: {label: 'parsecs'}, // Left y-axis.
+								brightness: {side: 'right', label: 'apparent magnitude'} // Right y-axis.
+								}
+							}
+							};
+
+							var classicOptions = {
+							width: 1000,
+							series: {
+								0: {targetAxisIndex: 0},
+								1: {targetAxisIndex: 1}
+							},
+							title: 'Nearby galaxies - distance on the left, brightness on the right',
+							vAxes: {
+								// Adds titles to each axis.
+								0: {title: 'parsecs'},
+								1: {title: 'apparent magnitude'}
+							}
+							};
+
+							function drawMaterialChart() {
+							var materialChart = new google.charts.Bar(chartDiv);
+							materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+							button.onclick = drawClassicChart;
+							}
+							drawMaterialChart();
+						};
+					</script>
+				</div>
+		</div>
+	</div>
+</div>
+
+  <body>
+    
+    <br><br>
+    <div id="chart_div" style="width: 800px; height: 500px;"></div>
+  </body>
+</html>
+		
+<div id="tabs" style="margin-top: 0;">
+	<nav id="tabs-nav" role="navigation">
+	</nav>
+</div>
+
+
+<div class="container">
+	<h2>Variance forecast : </h2>
+	<div class="row">
+	  <div class="col-sm">
+		<label for="exampleInputEmail1">Storage : </label>
+		<label for="exampleInputEmail1">35 000 kWh</label>
+	  </div>
+	  <div class="col-sm">
+		<label for="exampleInputEmail1">Net Energy Balance :</label>
+		<label for="exampleInputEmail1">+ 7000 kWh</label>
+	  </div>
+	</div>
+  </div>
+
+  	<!-- Elias, insert here -->
+	<!-- Yes or No bouton -->
+
+	<div class="container">
+		<h2> Exchange parameters : </h2>
+		<div class="row">
+			<div class="col-sm">
+				<h4>Operating range : </h4>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+					<label class="form-check-label" for="flexRadioDefault1">
+					  Always
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+					<label class="form-check-label" for="flexRadioDefault2">
+					  Outside working hours
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+					<label class="form-check-label" for="flexRadioDefault1">
+					  No more
+					</label>
+				  </div>
+			</div>
+			<div class="col-sm">
+				<h4>Prefered target : </h4>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadio" id="flexRadioDefault11">
+					<label class="form-check-label" for="flexRadioDefault11">
+					  Local
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadio" id="flexRadioDefault22" checked>
+					<label class="form-check-label" for="flexRadioDefault22">
+					  Entity
+					</label>
+				  </div>
+				
+
+			</div>
+		  </div>
+	
+	
+	
+	</div>
+
+
+<div class="container">
+	<h2>Exchange action : </h2>
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm">
+			<a href="" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Cancel</a>
+		  </div>
+		  <div class="col-sm">
+			<a href="http://localhost:3000" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Sell Net Energy Balance </a>
+		  </div>
+		</div>
+		<br>
+	  </div>
+
+	
+
+
+  </div>
+
+
+<footer id="footer-wrap" role="contentinfo">
+    <div class="copyright">
+      <p>
+          <a target="_blank" href="http://www.guichet.public.lu/myguichet/en/apropos/index.html#referenciel" rel="license" title="About this site: Web standards (Renow)"><img src="MyGuichet_files/renow.png" alt="Renow"></a>
+          <a target="_blank" rel="license" href="http://www.guichet.public.lu/myguichet/en/aspects-legaux/index.html#copyright">Copyright</a>
+      </p>
+    </div>
+  </div>
+</footer>
+			
+<div id="jstree-marker" style="display: none;"></div><div id="vakata-contextmenu"></div></body></html>

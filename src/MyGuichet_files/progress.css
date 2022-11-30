@@ -1,0 +1,200 @@
+/*!
+* Progress Bar styles
+* ========================================================================
+* Prefix: ps
+*/
+
+.js-ps {
+	position:relative;
+	padding:21px 0 22px; /* half of icon size : 85 - 12 / 2 */
+	margin:3em 43px 1.5em;
+}
+.js-ps-bar {
+	width:100%;
+}
+.js-ps-bar, .js-ps-bar-progress {
+	position:relative;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+	border:1px solid #dfdbdb;
+	border-radius: 3px;
+	
+	height:12px;
+	width:100%;
+}
+.js-ps-bar-progress {
+	position:absolute;
+	top:-1px;
+	left:-1px;
+
+	border-color:#5e5e5e;
+	box-shadow: inset 0 -3px 3px -3px rgba(0,0,0,0.5);
+	
+	background:#e4e4e4 url("img/layout/progress/bg-progress.gif");
+
+	width:0;
+}
+.js-ps-bar-desc {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.js-ps.ps-steps {
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+.progress li {
+	display:list-item;
+	list-style:decimal outside;
+	margin:0 0 0 5em;
+	color:#000;
+}
+
+.js-ps li {
+	position:relative;
+	list-style:none;
+	display: block;
+	width:auto;
+}
+.js-ps li .ps-label {
+	display:inline;
+	font-size:1.3em;
+	text-align:center;
+	line-height:normal;
+}
+.js-ps li .ps-label .ps-time {
+	display:inline;
+	font-size:.6em;
+	line-height:normal;
+}
+.js-ps .ps-is-curent {
+	font-weight: normal;
+}
+
+.js-ps .ps-inter-step .ps-label,
+.js-ps .ps-extra-step .ps-label {
+	display:inline;
+	font-size:.9em;
+	text-align:center;
+	line-height:normal;
+}
+.js-ps .ps-extra-step {
+	margin-top:21px;
+}
+.js-ps .ps-extra-step .ps-label:before{
+	content:" ";
+	position: absolute;
+	bottom: 0;
+	top: -31px;
+	left:50%;
+	width: 10px;
+	height: 31px;
+	margin-left:-5px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	background-image: url("img/layout/progress/icons.png");
+	background-position: -123px -197px;
+	background-repeat: no-repeat;
+}
+.js-ps .ps-extra-step .ps-label {
+	background-color:#FFF;
+	border:1px solid #cccccc;
+	border-radius: 3px;
+	padding:4px;
+	color:#333;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	z-index:1000;
+	
+	cursor:pointer;
+}
+.js-ps .ps-extra-step .ps-label .ps-time {
+	font-size:1.1em;
+	color:#000;
+}
+
+
+/* ICONS */
+	/* no JS styling */
+	.progress  .ps-icon {
+	  display: none;
+	}
+	.ps-is-curent {
+	  font-weight: bold;
+	}
+
+.js-ps .ps-icon {
+  display: block;
+  width: 85px;
+  height: 55px;
+  margin-right: 0;
+  margin-top: 0;
+  line-height: 85px;
+  vertical-align: text-top;
+  background-image: url("img/layout/progress/icons.png");
+  background-position: 85px 85px;
+  background-repeat: no-repeat;
+}
+.js-ps .ps-extra-step  .ps-icon {
+  width: 24px;
+  height: 24px;
+}
+.js-ps .ps-icon-file {
+  background-position: 0 -15px;
+}
+.js-ps .ps-icon-file-new {
+  background-position: -85px -15px;
+}
+.js-ps .ps-icon-file-arrow-down {
+  background-position: -170px -15px;
+}
+.js-ps .ps-icon-file-check {
+  background-position: -255px -15px;
+}
+.js-ps .ps-icon-file-alert {
+  background-position: -340px -15px;
+}
+.js-ps .ps-icon-extra {
+  background-position: -16px -205px;
+}
+
+.js-ps .ps-is-curent .ps-icon-file,
+.js-ps .js-ps-is-done .ps-icon-file {
+  background-position: 0 -100px;
+}
+.js-ps .ps-is-curent .ps-icon-file-new,
+.js-ps .js-ps-is-done .ps-icon-file-new {
+  background-position: -85px -100px;
+}
+.js-ps .ps-is-curent .ps-icon-file-arrow-down,
+.js-ps .js-ps-is-done .ps-icon-file-arrow-down {
+  background-position: -170px -100px;
+}
+.js-ps .ps-is-curent .ps-icon-file-check,
+.js-ps .js-ps-is-done .ps-icon-file-check {
+  background-position: -255px -100px;
+}
+.js-ps .ps-is-curent .ps-icon-file-alert,
+.js-ps .js-ps-is-done .ps-icon-file-alert {
+  background-position: -340px -100px;
+}
+.js-ps .ps-is-curent .ps-icon-extra,
+.js-ps .js-ps-is-done .ps-icon-extra {
+  background-position: -46px -205px;
+}
+
+

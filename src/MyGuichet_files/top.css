@@ -1,0 +1,1064 @@
+/*!
+* Top bars styles
+* ========================================================================
+* 
+*/
+
+
+#page-wrap{
+	position: relative;	
+}
+
+/* - These three rules should do the trick as a backup for page length for no-js users -
+@media only screen and (min-height:500px) and (max-height: 800px){
+	#page-wrap{
+		min-height: 380px;
+	}
+}
+
+@media only screen and (min-height:801px) and (max-height: 1000px){
+	#page-wrap{
+		min-height: 660px;
+	}
+}
+
+@media only screen and (min-height:1001px) and (max-height: 1500px){
+	#page-wrap{
+		min-height: 1000px;
+	}
+}
+ */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Reusable stuff
+ */
+
+.pulldown-btn{
+	position: relative;
+	float: right;
+	width: 31px;
+	height: 2.2em;
+/*	overflow: hidden; */
+	text-align: center;
+}
+
+.pulldown-btn span{
+	position: absolute;
+	z-index: 20;
+	width: 29px;
+	height: 28px;
+	top: 0;
+	left: 0;
+	background: url("img/layout/icons/micro-d-arrow-shad.png") left center no-repeat;
+}
+.has-pulldown-btn:hover .pulldown-btn span,
+.has-pulldown-btn:focus .pulldown-btn span {
+	background-position: right center;
+}
+
+
+.pulldown-btn:hover span, .pulldown-btn:active span, .pulldown-btn:focus span{
+	background-position: right center !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Header layout
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+ 
+#header-wrap{
+	position: relative;
+	height: 4.2em;
+}
+
+/* reset des listes */
+#header-wrap ul, #header-wrap ol { list-style:none; margin:0; }
+#header-wrap li { margin:0; }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Corporate bar -- vérifier leur utilité - remplacé par govbar
+ */
+
+#corporate-bar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 3em;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background: #f3f3f3;
+}
+#corporate-bar .page-width {
+	margin:0 10px;
+    max-width:inherit;
+    min-width: inherit;
+    width: auto;
+}
+
+#header-wrap .cb-gouv{
+	position: absolute;
+	top: .5em;
+	left: 10px;	
+}
+
+#header-wrap .cb-dir{
+	position: absolute;
+	right: 10px;	
+	margin: .85em 0 0;
+	padding: 0;
+}
+
+#header-wrap .cb-dir li{
+	margin: 0 0 0 18px;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+#header-wrap .cb-dir a{
+	color: #666666;
+	font-size: 85%;	
+	text-decoration: none;
+}
+
+#header-wrap .cb-dir a:hover, .cb-dir a:focus{
+	color: #333333;	
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Banner
+ */
+
+#page-banner{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background:#FFF;
+}
+
+#page-banner a{
+	text-decoration: none;	
+}
+
+.pb-title{
+	margin: 0;
+	padding: 0;	
+	font-size: 1em;
+	line-height: 1em;
+	border: none;
+}
+
+.pb-link{
+	display: block;	
+	padding-top: 3px;
+	width: 221px;
+}
+
+.pb-logo{
+	display: block;	
+}
+
+#header-wrap .pb-connect{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0 0 0.8em 0;
+}
+
+#header-wrap .pb-profile{
+	float: left;
+	padding: 0;
+	margin: .4em .2em 0 0;
+}
+
+#header-wrap .pb-mobile {
+	border-right: 1px solid #e8e8e8;
+	margin: 0;
+	padding: .4em 1em .4em 0;
+	float: left;
+	line-height: 1.9;
+}
+
+.pb-pr-btn{
+	display: block;
+	position: relative;
+	float: left;
+	min-width: 10em;
+	margin: 0 5px 0 0;
+	padding-right: 35px;
+	box-sizing: border-box;
+}
+
+.pb-pr-title{
+	line-height: 1.9em;
+	color: #333333;
+	font-size: 1em;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+	margin: 1px;
+	display: block;
+	float:left;
+}
+
+.pb-profile .pulldown-btn{
+	padding: 1px 1px 0;	
+	position:absolute;
+	top:0;
+	right:0;
+	width: 31px;
+	height: 28px;
+	background: none;
+}
+
+.pb-profile .pulldown-btn span{
+	border: none;
+	background: transparent url("img/layout/icons/micro-d-arrow.gif") 2px top no-repeat;
+	left: 1px;
+	width: 31px;
+	height: 30px;
+	top: 1px;
+}
+
+/* hover & deployed styles */
+
+.pb-connect .pb-pr-btn:hover .pb-pr-title, 
+.pb-connect .pb-pr-btn:focus .pb-pr-title,
+.pb-connect .pb-logout-btn:hover, 
+.pb-connect .pb-logout-btn:focus,
+.pb-connect .pb-mobile-btn:hover,
+.pb-connect .pb-mobile-btn:focus,
+.pb-connect .pb-help-btn:hover, 
+.pb-connect .pb-help-btn:focus {
+	color:#000;
+}
+
+.pb-profile.is-deployed .pulldown-btn{
+	background: #d7d7d7;
+	background: -moz-linear-gradient(left, #d7d7d7 0%, #8a8a8a 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d7d7d7), color-stop(100%,#8a8a8a));
+	background: -webkit-linear-gradient(left, #d7d7d7 0%,#8a8a8a 100%);
+	background: -o-linear-gradient(left, #d7d7d7 0%,#8a8a8a 100%);
+	background: -ms-linear-gradient(left, #d7d7d7 0%,#8a8a8a 100%);
+	background: linear-gradient(left, #d7d7d7 0%,#8a8a8a 100%);
+	border-radius: 15px 15px 0 0 / 12px 12px 0 0;
+}
+
+.pb-profile.is-deployed .pulldown-btn span{
+	border: none;
+	background: #f3f3f3 url("img/layout/icons/micro-d-arrow.gif") right top no-repeat;
+	border-radius: 15px 15px 0 0 / 12px 12px 0 0;
+}
+
+.pb-pr-details, .no-js .pb-pr-btn .pulldown-btn{
+	display: none;
+}
+
+.js .pb-pr-details{
+	outline: medium none;
+	display: none;
+	position: absolute !important;
+	z-index: 15;
+	background: red;
+	padding: 1px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	border-radius: 16px 0 16px 16px;
+	background: #d7d7d7;
+	background: -moz-linear-gradient(-73deg, #D7D7D7 35%, #8A8A8A 53%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(35%,#d7d7d7), color-stop(53%,#8a8a8a));
+	background: -webkit-linear-gradient(-73deg, #D7D7D7 35%, #8A8A8A 53%);
+	background: -o-linear-gradient(-73deg, #D7D7D7 35%, #8A8A8A 53%);
+	background: -ms-linear-gradient(-73deg, #D7D7D7 35%, #8A8A8A 53%);
+	background: linear-gradient(-73deg, #D7D7D7 35%, #8A8A8A 53%);
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+}
+
+.pb-pr-det-wrapper{
+	background: #f3f3f3;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 1.1em 0;
+	border-radius: 14px 0 14px 14px;
+}
+
+.pb-pr-id{
+	font-size: .9em;
+	color: #000000;
+	background: #ffffff;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	padding: .6em 1.5em;
+	display: block;	
+	width:20em;
+	margin: .5em 0 .8em;
+}
+.pb-pr-det-wrapper select {
+}
+.pb-pr-id form, .pb-pr-id .ui-selectmenu {
+}
+
+.pb-pr-id img{
+	vertical-align: bottom;	
+	margin-right: 7px;
+	margin-bottom: 5px;
+}
+
+#page-banner .pb-pr-link{
+	color: #003399;
+	text-decoration: underline;
+	margin: 0 0 0 1.5em;
+}
+
+#header-wrap .pb-help{
+	padding: .4em 1em .4em 0;
+	margin: 0.02em 0 0 .5em;
+	float: left;
+	line-height: 1.9em;
+}
+
+.pb-help-btn{
+	display: block;
+	color: #515151;
+	text-decoration: none;
+}
+
+#header-wrap .pb-logout{
+	padding: .4em 0 .4em 1em;
+	margin: .02em 0 0 0;
+	border-left: 1px solid #e8e8e8;	
+	float: left;
+	line-height: 1.9em;
+}
+
+.pb-logout-btn{
+	display: block;
+	color: #515151;
+	text-decoration: none;
+}
+
+.pb-mobile-btn{
+	display: block;
+	color: #515151;
+	text-decoration: none;
+	margin: .02em 0 0 0;
+	padding-left: 2.2857em;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.pb-mobile-btn::before {
+	background: url('img/app-mobile-logo.svg') no-repeat center center transparent;
+	content: "";
+	display: block;
+	height: 1.7142em;
+	width: 1.7142em;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Space bar
+ */
+
+#space-bar{
+	overflow:hidden;
+	position:relative;
+	line-height: 1.4em;
+	font-size: 1.25em;
+/*	text-shadow: 1px 1px 2px #000000; */
+}
+.js #space-bar{
+	overflow:visible;
+}
+#space-bar,
+.sb-task .sb-select,
+.sb-task .sb-title,
+.sb-task .pulldown-btn{
+	height: 2.5em;
+}
+
+#space-bar .sb-space-title {
+	margin:0;
+	padding:0;
+	border:none;
+	position:absolute;
+	z-index:2;
+	top:0;
+	right:0;
+	color:#fff;
+	font-size:1.6em;
+	line-height:1.5em;
+	margin-right:7em;
+	text-shadow: 1px 1px 2px rgba(0,0,0, 0.33)
+}
+/* reset des listes */
+#space-bar ul, #space-bar ol { list-style:none; margin:0; }
+#space-bar li { margin:0; }
+
+#space-bar li,
+#space-bar a,
+#space-bar span {
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+#space-bar a span {
+	cursor:pointer;
+}
+#space-bar,
+.sb-default .sb-nav{
+  background: #dfdfdf;
+  background: -webkit-linear-gradient(top, #dfdfdf 0%, #cecece 100%);
+  background: linear-gradient(to bottom, #dfdfdf 0%, #cecece 100%);
+}
+.multiplebgs.cssgradients #space-bar.sb-pro{
+	background-image: -moz-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -moz-linear-gradient(top, #00AFD7  0%,#0095B7 100%);	
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfdfdf), color-stop(100%,#cecece)), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00AFD7), color-stop(100%,#0095B7));	
+	background-image: -webkit-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -webkit-linear-gradient(top, #00AFD7 0%,#0095B7 100%);
+	background-image: -ms-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -ms-linear-gradient(top, #00AFD7 0%,#0095B7 100%);
+	background-image: -o-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -o-linear-gradient(top, #00AFD7 0%,#0095B7 100%);
+	background-image: linear-gradient(top, #dfdfdf 0%, #cecece 100%), linear-gradient(top, #00AFD7 0%,#0095B7 100%);
+	background-position: left top, right top;
+	-moz-background-size: 50% 100%, 50% 100%;
+	background-size: 50% 100%, 50% 100%;	
+	background-repeat: no-repeat;
+}
+.multiplebgs.cssgradients #space-bar.sb-private{
+	background-image: -moz-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -moz-linear-gradient(top, #7aa800  0%,#6b9200 100%);	
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfdfdf), color-stop(100%,#cecece)), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7aa800), color-stop(100%,#6b9200));	
+	background-image: -webkit-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -webkit-linear-gradient(top, #7aa800 0%,#6b9200 100%);
+	background-image: -ms-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -ms-linear-gradient(top, #7aa800 0%,#6b9200 100%);
+	background-image: -o-linear-gradient(top, #dfdfdf 0%, #cecece 100%), -o-linear-gradient(top, #7aa800 0%,#6b9200 100%);
+	background-image: linear-gradient(top, #dfdfdf 0%, #cecece 100%), linear-gradient(top, #7aa800 0%,#6b9200 100%);
+	background-position: left top, right top;
+	-moz-background-size: 50% 100%, 50% 100%;
+	background-size: 50% 100%, 50% 100%;	
+	background-repeat: no-repeat;
+}
+
+.sb-task .sb-select{
+	display: block;	
+	float: left;
+	text-decoration: none;
+	position: relative;
+	z-index: 12;
+	color: #000;
+	z-index: 30;
+}
+
+.sb-default .sb-task .sb-select{
+	background:none;
+}
+
+.sb-default .sb-task.is-deployed .sb-select-large .pulldown-btn {
+	background:none;
+}
+
+.sb-title{
+	padding-top: .5em;
+	padding-right: 15px;
+	display: block;
+	float: left;
+	border: none;
+	margin: 0;
+}
+
+.sb-title a{
+	color: #ffffff;
+	text-decoration: none;	
+}
+
+#space-bar.sb-default .sb-title{
+	margin: 0;
+	border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.sb-private span.sb-pointer, 
+.sb-pro span.sb-pointer,
+.ie.csstransforms span.sb-pointer,
+.ie.csstransforms .sb-private span.sb-pointer, 
+.ie.csstransforms .sb-pro span.sb-pointer{
+	display:block;
+	z-index: 0;
+	background: url('img/bg-space-bar-pointer.png') center right no-repeat;
+	height: 2.5em;
+	width: 100px;
+	position: absolute;
+	right: -25px;
+	top: 50%;
+	margin-top:-1.25em;
+}
+
+.ie.csstransforms span.sb-pointer,
+.ie.csstransforms .sb-private span.sb-pointer, 
+.ie.csstransforms .sb-pro span.sb-pointer {
+	border-radius:0;
+}
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/* ACHTUNG! As of writing this, Firefox seem to have changed the way it interprets gradient angles, according to new standards. Maybe we should check this out before going live, especially among other browsers... */
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+.csstransforms .sb-private span.sb-pointer, 
+.csstransforms .sb-pro span.sb-pointer{
+	right: -.75em;
+	width: 1.5em;
+	height:1.5em;
+	margin-top:-.75em;
+	border-radius: 0 0 0 50%;
+  background: #cecece;
+  background: -webkit-linear-gradient(-45deg, #dfdfdf 0%, #cecece 100%);
+  background: linear-gradient(-215deg, #dfdfdf, #cecece);
+
+     -moz-transform:    rotate(45deg)
+                         skew(10deg,10deg);
+     -o-transform:      rotate(45deg)
+                         skew(10deg,10deg);
+     -webkit-transform: rotate(45deg)
+                         skew(10deg,10deg);
+     transform:         rotate(45deg)
+                         skew(10deg,10deg);
+}
+.sb-select .pulldown-btn{
+	line-height: 1em;
+	padding-right: 0;
+	position: relative;
+	z-index: 31;
+	width: 29px;
+}
+
+.sb-select-large .pulldown-btn{
+	width: 30px;
+	padding-right: 0;
+	border-right: 1px solid rgba(0,0,0,.08);
+}
+
+.sb-select .pulldown-btn span{
+	top:1px;
+	height:100%;
+}
+
+.sb-select.pulldown-round .pulldown-btn span{
+/*	background: url("img/layout/icons/micro-d-arrow.png") left top no-repeat;*/
+}
+
+.sb-select.sb-select-large .pulldown-btn span{
+	background: url("img/layout/icons/micro-d-arrow-shad.png") left center no-repeat;
+}
+
+.sb-select-large .pulldown-btn:hover span, .sb-select-large .pulldown-btn:focus span, .sb-select-large .pulldown-btn:active span{
+	background-position: right center !important;
+}
+
+.is-deployed .sb-select .pulldown-btn span{
+	border: none;
+	background: #fff url("img/layout/icons/micro-d-arrow.gif") right center no-repeat;
+	z-index: 99;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.18);
+}
+
+
+.ie8 #space-bar:after,
+.ie9 #space-bar:after{
+    content: ' ';
+    position: absolute;
+		z-index:0;
+		right:0;
+		top:0;
+		height:100%;
+		width:80%;
+		z-index:1;
+}
+.sb-pro .sb-nav {
+	background:#00AFD7 url(img/pro/bg-space-bar.png) left center repeat-x;
+	background: -moz-linear-gradient(top, #00AFD7 0%,#0095B7 100%) repeat-y 63px top;	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00AFD7), color-stop(100%,#0095B7)) repeat-y 63px top;	
+	background: -webkit-linear-gradient(top, #00AFD7 0%,#0095B7 100%) repeat-y 63px top;
+	background: -ms-linear-gradient(top, #00AFD7 0%,#0095B7 100%) repeat-y 63px top;
+	background: -o-linear-gradient(top, #00AFD7 0%,#0095B7 100%) repeat-y 63px top;
+	background: linear-gradient(top, #00AFD7 0%,#0095B7 100%) repeat-y 63px top;
+}
+.ie8 .sb-pro:after,
+.ie9 .sb-pro:after{
+	background:#00AFD7 url(img/pro/bg-space-bar.png) left center repeat-x;
+	background-size: auto 100%;
+}
+.ie8 .sb-private:after,
+.ie9 .sb-private:after{
+	background:#7aa800 url(img/private/bg-space-bar.png) left center repeat-x;
+	background-size: auto 100%;
+}
+
+.sb-private .sb-nav{
+	background:#7aa800 url(img/private/bg-space-bar.png) left center repeat-x;
+	background: -moz-linear-gradient(top, #7aa800 0%,#6b9200 100%) repeat-y 63px top;	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7aa800), color-stop(100%,#6b9200)) repeat-y 63px top;	
+	background: -webkit-linear-gradient(top, #7aa800 0%,#6b9200 100%) repeat-y 63px top;
+	background: -ms-linear-gradient(top, #7aa800 0%,#6b9200 100%) repeat-y 63px top;
+	background: -o-linear-gradient(top, #7aa800 0%,#6b9200 100%) repeat-y 63px top;
+	background: linear-gradient(top, #7aa800 0%,#6b9200 100%) repeat-y 63px top;
+}
+
+.sb-taskbar{
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.sb-task{
+	float: left;
+}
+#space-bar .sb-task.sb-space{
+	background: none;	
+  background: #dfdfdf;
+  background: -webkit-linear-gradient(top, #dfdfdf 0%, #cecece 100%);
+  background: linear-gradient(to bottom, #dfdfdf 0%, #cecece 100%);
+}
+
+.sb-pro .sb-task{
+	background: #0086a6;
+}
+
+.sb-private .sb-task{
+	background: #597a00;
+}
+.sb-private .sb-task .sb-title a,
+.sb-pro .sb-task .sb-title a{
+	color: #ffffff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.sb-private .sb-task{
+	background: #597a00;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.sb-task .sb-select{
+	background: none;	
+	padding-left: 0;
+}
+
+.sb-select-icon{
+	position:relative;
+	z-index:1;
+	float: left;
+    margin: -9px 8px 0;
+	top:50%;
+}
+
+.sb-taskbar .sb-title{
+	padding-left: 38px;
+	position: relative;
+	text-decoration:none;
+}
+
+.sb-taskbar .sb-space .sb-title{
+	background: rgba(0,0,0,.03);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	z-index: 1;
+}
+
+.sb-task .sb-select-large .pulldown-btn{
+	z-index: 55;
+}
+
+.sb-taskbar .sb-mandate .sb-title{
+	padding-left: 15px;
+	border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.sb-taskbar .sb-mandate.sb-is-selected .sb-title{
+	padding-left: 55px;
+	background-position: 15px 0.4em;
+	background-color: rgba(0,0,0,.2);
+	border: none;
+}
+.sb-pro .sb-taskbar .sb-mandate.sb-is-selected .sb-title{
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,.4);
+    height: 2.1em;
+    margin: 0.2em 0;
+    padding-top: 0.3em;
+}
+
+.sb-taskbar .sb-task.sb-mandate, .sb-taskbar .sb-task.sb-firm{
+	position: relative;
+	z-index: 5;
+}
+
+.sb-taskbar .sb-task.sb-mandate.is-deployed{
+	z-index: 59;	
+}
+.sb-taskbar .sb-task.sb-mandate.is-deployed .sb-select{
+	z-index: 53;
+}
+
+.sb-taskbar .sb-task.sb-mandate.is-deployed .sb-select .sb-title{
+	height: 1.8em;
+}
+
+.sb-pulldown {
+	display:none;
+}
+.sb-pulldown {
+	position: absolute;
+	z-index: 29;
+	top: 2.5em;
+	left: 34px;
+	padding: 1.25em .8em;
+	min-width:17em;
+	max-width:25em;
+	background: #ffffff;
+	text-shadow: none;
+	font-size: .9em;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.18);
+}
+.sb-space .sb-pulldown{
+	z-index: 31;	
+}
+#space-bar .p-cat-lvl0{
+	position: relative;
+	margin: 0 0 2em;
+}
+.p-cat-lvl0.has-active-elements {
+	float: left;
+}
+
+#space-bar .sb-pulldown .p-menu-item {
+	margin-top:1em;
+}
+#space-bar .sb-pulldown .p-menu-item:first-child {
+	margin-top:0;
+}
+.sb-pulldown a,
+.p-menu-title {
+	position:relative;
+	display: block;
+	margin-top:2px;
+	padding:.3em .5em;
+	background:#eaeaea;
+	color: #000;
+	text-decoration:none;
+	padding-left:30px;
+}
+.sb-pulldown a:hover,
+.sb-pulldown a:focus,
+.sb-pulldown a.has-focus {
+	background-color:#d2d2d2;
+	-webkit-box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.44);
+	box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.44);
+}
+.ie_lt8 .sb-pulldown a,
+.ie_lt8 .p-menu-title {
+	padding-left:.5em;
+}
+.sb-pulldown li a {
+	background-color:#FFF;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.44);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.44);
+}
+.sb-pulldown li a:hover,
+.sb-pulldown li a:focus,
+.sb-pulldown li a.has-focus {
+	background-color:#f5f5f5;
+}
+.sb-pulldown a:before {
+	content:'';
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 10px;
+	background: url('img/layout/icons/spr-spaces-pro-perso.png') -5px -38px no-repeat;
+	top:50%;
+	margin-top:-7px;
+}
+.sb-pulldown .p-pro a:before {
+	background-position:  -29px -38px;
+}
+.sb-pulldown a.p-choose:before {
+	background-position:  -104px -38px;
+}
+.sb-pulldown a.p-create:before {
+	background-position:  -52px -38px;
+}
+.sb-pulldown a.p-manage:before {
+	background-position:  -79px -38px;
+}
+
+
+.p-menu-title{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding:.3em .5em;
+	text-shadow: 1px 1px 2px rgba(25,25,25,.5);
+	background:#eaeaea;
+}
+.p-pro .p-menu-title{
+	color: #fff;	
+	background:#00afd7;
+}
+.p-private .p-menu-title{
+	color: #fff;	
+	background:#7aa800;
+}
+.p-menu-item ul{
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+
+.p-menu-item ul li {
+	padding:2px 0;	
+}
+.p-menu-item ul li a span{
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 27px;
+	min-height: 25px;
+	display: block;	
+}
+
+
+.has-more{
+	background: url('img/layout/icons/hasmore.gif') 95% center no-repeat;
+}
+
+.is-active{
+	background: #d7d7d7;
+	background: -moz-linear-gradient(top, #ababab 0%, #d7d7d7 15%, #cccccc 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ababab), color-stop(15%,#d7d7d7), color-stop(100%,#cccccc));
+background: -webkit-linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+background: -o-linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+background: -ms-linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+background: linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+	color: #333333;	
+	text-decoration: none;
+}
+
+.has-more.is-active{
+	background: url('img/layout/icons/hasmore-isactive.gif') 95% center no-repeat, -moz-linear-gradient(top, #ababab 0%, #d7d7d7 15%, #cccccc 100%);
+	background: url('img/layout/icons/hasmore-isactive.gif') 95% center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ababab), color-stop(15%,#d7d7d7), color-stop(100%,#cccccc));
+	background: url('img/layout/icons/hasmore-isactive.gif') 95% center no-repeat, -webkit-linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+	background: url('img/layout/icons/hasmore-isactive.gif') 95% center no-repeat, -o-linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+	background: url('img/layout/icons/hasmore-isactive.gif') 95% center no-repeat, -ms-linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+	background: url('img/layout/icons/hasmore-isactive.gif') 95% center no-repeat, linear-gradient(top, #ababab 0%,#d7d7d7 15%,#cccccc 100%);
+}
+
+.p-cat-lvl1{
+	display: none;
+}
+.p-cat-lvl1.is-deployed {
+	display: block;
+	float: left;
+	width: 65%;	
+	position: relative;
+}
+
+.p-cat-lvl1:before{
+	/*figure out a way to add class or state for when the two sides are displayed*/
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 5px;
+	background: #d7d7d7;
+	background: -moz-linear-gradient(top, #d7d7d7 0%, #d7d7d7 20px, #cccccc 21px, #cccccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d7d7d7), color-stop(20px,#d7d7d7), color-stop(21px,#cccccc), color-stop(100%,#cccccc));
+	background: -webkit-linear-gradient(top, #d7d7d7 0%,#d7d7d7 20px,#cccccc 21px,#cccccc 100%);
+	background: -o-linear-gradient(top, #d7d7d7 0%,#d7d7d7 20px,#cccccc 21px,#cccccc 100%);
+	background: -ms-linear-gradient(top, #d7d7d7 0%,#d7d7d7 20px,#cccccc 21px,#cccccc 100%);
+	background: linear-gradient(top, #d7d7d7 0%,#d7d7d7 20px,#cccccc 21px,#cccccc 100%);
+	z-index: 1;
+}
+
+.p-rs-head{
+	width: 100%;
+}
+
+.p-heading{
+	font-size: .9em;
+	margin: 0 0 0 10px;	
+	float:left;
+}
+
+.p-filter{
+	font-size: .8em;
+	padding: 2px 5px 2px 20px;
+	color: #666666;
+	border: 1px solid #cccccc;
+	box-shadow: inset 4px 4px 10px rgba(0,0,0,.1);
+	float: right;
+	margin: 0 0 10px 0;
+	background: #ffffff url("img/layout/icons/magnifier.png") 3px center no-repeat;
+}
+
+.p-rs-content{
+	background: #f3f3f3;
+	background: -moz-linear-gradient(top, #dddddd 0%, #f3f3f3 20px, #f3f3f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(20px,#f3f3f3), color-stop(100%,#f3f3f3));
+	background: -webkit-linear-gradient(top, #dddddd 0%,#f3f3f3 20px,#f3f3f3 100%);
+	background: -o-linear-gradient(top, #dddddd 0%,#f3f3f3 20px,#f3f3f3 100%);
+	background: -ms-linear-gradient(top, #dddddd 0%,#f3f3f3 20px,#f3f3f3 100%);
+	background: linear-gradient(top, #dddddd 0%,#f3f3f3 20px,#f3f3f3 100%);
+	border-top: 1px solid #c2c2c2;
+
+}
+
+
+.p-cat-lvl1.is-deployed,
+.p-cat-lvl1.is-deployed .p-rs-head, 
+.p-cat-lvl1.is-deployed .jstree-container{
+    width: 400px;
+}
+
+
+.sb-taskbar .jstree a.has-focus{
+	outline:1px dotted !important;
+}
+
+/* Styles for jsTree */
+
+
+
+.sb-taskbar .jstree-memubar ul{
+	margin: 10px 0; 
+}
+.sb-taskbar .jstree-memubar li{
+	margin-top: 5px;
+	margin-left: 18px;
+	margin-bottom: 15px;
+}
+.sb-taskbar .jstree-memubar li li{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.sb-taskbar .jstree-memubar li li.is-current{
+	margin-top: 5px;
+	margin-bottom: 8px;
+	
+}
+
+.sb-taskbar .jstree-memubar li li.is-current a{
+	padding: .3em 2em .3em 1em;
+	margin-left: -1em;
+	border: 1px solid #dcdcdc;
+	box-shadow: 0 0 2px #bbb;
+	border-radius: 9px;
+	background: #ffffff;
+	-moz-box-sizing: content-box !important;
+	-o-box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+	color: #333333;
+	text-decoration: none;
+}
+
+.sb-taskbar .jstree-memubar a{
+	font-variant: small-caps;
+	color: #333333;
+	font-size: 1em;
+	padding:0 2px;
+}
+
+.sb-taskbar .jstree-memubar .jstree-open > a{
+	font-family: Calibri, sans-serif;
+	font-weight: bold;
+}
+
+.ie .sb-taskbar .jstree-memubar .jstree-open > a{
+	font-family: Calibri, sans-serif;
+	font-weight: normal;
+}
+
+.sb-taskbar .jstree-memubar ul li ul li a{
+	font-weight: normal;
+	font-variant: normal;
+	font-size: .9em;
+	color: #003399;
+	text-decoration: underline;
+}
+/*
+ * jsTree default theme 1.0
+ * Supported features: dots/no-dots, icons/no-icons, focused, loading
+ * Supported plugins: ui (hovered, clicked), checkbox, contextmenu, search
+ */
+
+.sb-taskbar .jstree-memubar li, 
+.sb-taskbar .jstree-memubar ins { background-image:url("img/layout/icons/jstree-menubar/d.png"); background-repeat:no-repeat; background-color:transparent; }
+.sb-taskbar .jstree-memubar li { background-position:-90px 0; background-repeat:repeat-y; }
+.sb-taskbar .jstree-memubar li.jstree-last { background:transparent; }
+.sb-taskbar .jstree-memubar .jstree-open > ins { background-position:-72px 0; }
+.sb-taskbar .jstree-memubar .jstree-closed > ins { background-position:-54px 0; }
+.sb-taskbar .jstree-memubar .jstree-leaf > ins { background-position:-36px 0; }
+
+.sb-taskbar .jstree-memubar .jstree-hovered { background:#ffffff;}
+.sb-taskbar .jstree-memubar a.jstree-loading .jstree-icon { background:url("img/layout/icons/jstree-menubar/throbber.gif") center center no-repeat                !important; }
+
+.sb-taskbar .jstree-memubar .jstree-no-dots li, 
+.sb-taskbar .jstree-memubar .jstree-no-dots .jstree-leaf > ins { background:transparent; }
+.sb-taskbar .jstree-memubar .jstree-no-dots .jstree-open > ins { background-position:-18px 0; }
+.sb-taskbar .jstree-memubar .jstree-no-dots .jstree-closed > ins { background-position:0 0; }
+
+.sb-taskbar .jstree-memubar .jstree-no-icons a .jstree-icon { display:none; }
+
+.sb-taskbar .jstree-memubar .jstree-no-icons .jstree-checkbox { display:inline-block; }
+.sb-taskbar .jstree-memubar .jstree-no-checkboxes .jstree-checkbox { display:none !important; }
+.sb-taskbar .jstree-memubar .jstree-checked > a > .jstree-checkbox { background-position:-38px -19px; }
+.sb-taskbar .jstree-memubar .jstree-unchecked > a > .jstree-checkbox { background-position:-2px -19px; }
+.sb-taskbar .jstree-memubar .jstree-undetermined > a > .jstree-checkbox { background-position:-20px -19px; }
+.sb-taskbar .jstree-memubar .jstree-checked > a > .jstree-checkbox:hover { background-position:-38px -37px; }
+.sb-taskbar .jstree-memubar .jstree-unchecked > a > .jstree-checkbox:hover { background-position:-2px -37px; }
+.sb-taskbar .jstree-memubar .jstree-undetermined > a > .jstree-checkbox:hover { background-position:-20px -37px; }
+.sb-taskbar #jstree-marker.jstree-memubar { background:url("img/layout/icons/jstree-menubar/d.png") -41px -57px no-repeat                !important; text-indent:-100px; }
+
+.sb-taskbar .jstree-memubar a.jstree-search { text-decoration: underline; color: #000000; }
+.sb-taskbar .jstree-memubar .jstree-locked a { color:silver; cursor:default; }
+
+/* IE6 BEGIN */
+.sb-taskbar .jstree-memubar li, 
+.sb-taskbar .jstree-memubar ins,
+.sb-taskbar #jstree-marker.jstree-memubar { _background-image:url("img/layout/icons/jstree-menubar/d.gif"); }
+.sb-taskbar .jstree-memubar .jstree-open ins { _background-position:-72px 0; }
+.sb-taskbar .jstree-memubar .jstree-closed ins { _background-position:-54px 0; }
+.sb-taskbar .jstree-memubar .jstree-leaf ins { _background-position:-36px 0; }
+.sb-taskbar .jstree-memubar .jstree-undetermined a .jstree-checkbox { _background-position:-20px -19px; }
+.sb-taskbar .jstree-memubar .jstree-checked a .jstree-checkbox { _background-position:-38px -19px; }
+.sb-taskbar .jstree-memubar .jstree-unchecked a .jstree-checkbox { _background-position:-2px -19px; }
+/* IE6 END */
+
+
+
+
+.scroll-pane{position:relative; width:400px; height:200px; overflow:scroll; overflow-x:hidden; overflow-y: auto; border-right: 4px solid #f3f3f3;}
+
+/*-TBU when other engines support this...-*/
+::-webkit-scrollbar {
+        width:10px;
+}
+::-webkit-scrollbar-thumb {
+        background: #dddddd;
+        border-radius:5px;
+		box-shadow: inset 2px 2px 4px #999999;
+}
+::-webkit-scrollbar-track        { background: #f3f3f3; }
+::-webkit-scrollbar-track-piece  { background: #f3f3f3; }
+::-webkit-scrollbar-corner       { background: #f3f3f3; }

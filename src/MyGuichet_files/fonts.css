@@ -1,0 +1,115 @@
+/*!
+* fonts.css
+* Type families definitions
+* ========================================================================
+* 
+*/
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_8_0.woff') format('woff'),url('fonts/Freight/259441_8_0.ttf') format('truetype');
+font-weight: 200;
+font-style: normal; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_5_0.woff') format('woff'),url('fonts/Freight/259441_5_0.ttf') format('truetype');
+font-weight: 200;
+font-style: italic; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_7_0.woff') format('woff'),url('fonts/Freight/259441_7_0.ttf') format('truetype');
+font-weight: 400;
+font-style: normal; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_0_0.woff') format('woff'),url('fonts/Freight/259441_0_0.ttf') format('truetype');
+font-weight: 400;
+font-style: italic; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_B_0.woff') format('woff'),url('fonts/Freight/259441_B_0.ttf') format('truetype');
+font-weight: 500;
+font-style: normal; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_4_0.woff') format('woff'),url('fonts/Freight/259441_4_0.ttf') format('truetype');
+font-weight: 500;
+font-style: italic; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_A_0.woff') format('woff'),url('fonts/Freight/259441_A_0.ttf') format('truetype');
+font-weight: 700;
+font-style: normal; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_2_0.woff') format('woff'),url('fonts/Freight/259441_2_0.ttf') format('truetype');
+font-weight: 700;
+font-style: italic; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_0_0.woff') format('woff'),url('fonts/Freight/259441_0_0.ttf') format('truetype');
+font-weight: 800;
+font-style: normal; }
+
+@font-face {
+font-family: 'Freight Sans';
+src: url('fonts/Freight/259441_1_0.woff') format('woff'),url('fonts/Freight/259441_1_0.ttf') format('truetype');
+font-weight: 800;
+font-style: italic; }
+
+@font-face {
+font-family: 'Freight Sans-n8';
+src: url('fonts/Freight/259441_0_0.eot');
+src: url('fonts/Freight/259441_0_0.eot?#iefix') format('embedded-opentype'); }
+ 
+@font-face {
+font-family: 'Freight Sans-i8';
+src: url('fonts/Freight/259441_1_0.eot');
+src: url('fonts/Freight/259441_1_0.eot?#iefix') format('embedded-opentype'); }
+ 
+@font-face {
+font-family: 'Freight Sans-n7';
+src: url('fonts/Freight/259441_A_0.eot');
+src: url('fonts/Freight/259441_A_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-i7';
+src: url('fonts/Freight/259441_2_0.eot');
+src: url('fonts/Freight/259441_2_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-n4';
+src: url('fonts/Freight/259441_7_0.eot');
+src: url('fonts/Freight/259441_7_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-i4';
+src: url('fonts/Freight/259441_0_0.eot');
+src: url('fonts/Freight/259441_0_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-n2';
+src: url('fonts/Freight/259441_8_0.eot');
+src: url('fonts/Freight/259441_8_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-i2';
+src: url('fonts/Freight/259441_5_0.eot');
+src: url('fonts/Freight/259441_5_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-n5';
+src: url('fonts/Freight/259441_B_0.eot');
+src: url('fonts/Freight/259441_B_0.eot?#iefix') format('embedded-opentype'); }
+
+@font-face {
+font-family: 'Freight Sans-i5';
+src: url('fonts/Freight/259441_4_0.eot');
+src: url('fonts/Freight/259441_4_0.eot?#iefix') format('embedded-opentype'); }

@@ -1,0 +1,522 @@
+/*!
+* Dialog styles
+* ========================================================================
+* 
+*/
+
+/* Dialog
+----------------------------------*/
+.ui-dialog { position: absolute; padding: 0; min-width: 900px; max-width: 1100px; width: 90%; overflow: hidden; }
+
+
+/* - if needed, for instance on a "processing" icon, 
+	add an 'st-rotate' class to have a rotating icon in CSS.
+	As of March 2012, works in FF, S and Cr         */
+
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to { 
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to { 
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+    }
+	to { 
+		transform: rotate(360deg);
+    }
+}
+
+.st-rotate{
+	-webkit-animation-name: rotate; 
+	-webkit-animation-duration: 1.5s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-o-animation-name: rotate; 
+	-o-animation-duration: 1.5s; 
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: linear;
+	-moz-animation-name: rotate; 
+	-moz-animation-duration: 1.5s; 
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: rotate; 
+	-ms-animation-duration: 1.5s; 
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	animation-name: rotate; 
+	animation-duration: 1.5s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+.spinner{
+	display: block;
+	background: url('img/layout/icons/st-preparation.png') center center no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	text-indent: -9000px;
+	overflow: hidden;
+	width: 18px;
+	height: 18px;
+}
+.ui-dialog .ui-dialog-titlebar { padding: .3em 1.3em .1em; position: relative;  }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 0; } 
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; border: 1px dotted #999999; }
+.ui-dialog .ui-dialog-content { border: 0; padding: 0; background: none; overflow: auto; zoom: 1;position: relative; }
+.ui-dialog .mod-content{
+	padding: 1.25em 1.3em;
+}
+.ui-dialog .mod-content *:last-child{
+	margin-bottom: 0;
+}
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+/*---------modales---------*/
+
+.ui-dialog{
+	position: absolute;	
+	background: #ffffff;
+	box-shadow: 0 0 7px #000000;
+}
+
+.ui-dialog-titlebar{
+	background: url('img/modal-hdr.gif') scroll repeat;
+	/*background: , url('img/modal-hdr.gif') scroll repeat;*/
+	
+	background: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 32px, rgba(255,255,255,0) 32px, rgba(255,255,255,0) 100%), url('img/modal-hdr.gif') scroll repeat;
+	background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(255,255,255,1)), color-stop(32px,rgba(255,255,255,1)), color-stop(32px,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))), url('img/modal-hdr.gif') scroll repeat;
+	background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 32px,rgba(255,255,255,0) 32px,rgba(255,255,255,0) 100%), url('img/modal-hdr.gif') scroll repeat;
+	background: -o-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 32px,rgba(255,255,255,0) 32px,rgba(255,255,255,0) 100%), url('img/modal-hdr.gif') scroll repeat;
+	background: -ms-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 32px,rgba(255,255,255,0) 32px,rgba(255,255,255,0) 100%), url('img/modal-hdr.gif') scroll repeat;
+	background: linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 32px,rgba(255,255,255,0) 32px,rgba(255,255,255,0) 100%), url('img/modal-hdr.gif') scroll repeat;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+}
+
+.ui-dialog-title{
+	font-size: 1.5em;
+	font-weight:normal;
+}
+
+.ui-dialog-titlebar-close{
+	
+}
+
+.ui-dialog-titlebar-close .ui-icon{
+	background: url('img/layout/icons/close-modal.png') center center no-repeat;
+	text-indent: -9000px;
+}
+
+.ui-dialog .modal.ui-dialog-content{
+	border: none;
+	border-top: 1px solid #8bcde5;
+	
+}
+
+.modal .mod-footer{
+	background: #edf5fc;
+	padding: 1.4em 1.3em 1.75em;
+}
+/*
+.btn.has-btn-ico.has-small-ico span{
+	padding: 0.3em 1.4em 0.3em 1em;
+}
+
+.btn.has-small-ico .btn-ico{
+	position: static;
+	vertical-align: sub;
+	margin-right: .5em;
+	padding-bottom: 1px;
+}*/
+
+.modal .mod-footer .btn{
+	margin: 0 3em 0 0.2em;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+
+.ui-widget-overlay {
+   /* background: url("images/ui-bg_flat_0_aaaaaa_40x100.png") repeat-x scroll 50% 50% #AAAAAA;*/
+	background: #000000;
+	opacity: .7;
+}
+.ui-widget-shadow {
+    /*background: url("images/ui-bg_flat_0_aaaaaa_40x100.png") repeat-x scroll 50% 50% #AAAAAA;*/
+    border-radius: 8px 8px 8px 8px;
+    margin: -8px 0 0 -8px;
+    opacity: 0.3;
+    padding: 8px;
+}
+
+
+/* Modales PJ
+-----------------------------------*/
+.mod-title{
+	color: #003366;
+	border: none;
+	font-size: 1.3em;
+	margin: 0 0 .5em 0;
+	line-height: 1;
+}
+
+.mod-tab-container{
+	border: 1px solid #52a0d9;
+	box-shadow: inset 2px 2px 6px rgba(24, 107, 168, 0.35);
+	padding: 30px 3% 30px 3%;
+	position: relative;
+}
+
+.mod-tab{
+	margin-bottom: 0;
+}
+
+.mod-tab .doc-name-type{
+	margin-left: 0;
+	color: #000000
+}
+
+.mod-tab.mod-tab-hidden {
+	position:absolute;
+	width:100%;
+	top:0;
+}
+
+form fieldset.mod-dt-src{
+	position: absolute;
+	margin-bottom: 0;
+	top: -45px;
+	right: 0;
+}
+
+form fieldset.mod-dt-src .search-field{
+	width: 17em;
+	/*to be checked, might need to be deleted...*/
+}
+
+.filter-search-form .search-field, .filter-search-form .search-field.has-focus{
+	background-position: 10px -230px, 0 0;
+}
+
+/*.ui-dialog .mod-content *:last-child*/
+
+
+html body.in{
+	background: none !important;
+}
+
+#fileupload{
+	width: 100%;
+	height: 100%;
+	border: 3px dashed #ff6600;
+	background: none;
+	position: relative;
+	border-radius: 10px;
+}
+
+body.in #fileupload, #fileupload.ui-state-acceptable {
+	border: 3px solid #ff9c00;
+	background: #fcf9ea;
+	box-shadow: 0 0 6px #ff9c00;
+	/* - Seems like this can't work, the browser's custom cursor is superseded by the OS's (win7 in my case) drag & drop cursor... - */
+	/* cursor: url('img/layout/modals/uploadcursor.png') 22 22, copy; */
+}
+
+.mod-dropzone{
+	width: 100%;
+	height: 100%;
+	padding: 30px 0;
+	position: relative;
+	background: none;
+	border: none;
+}
+
+.mod-dropzone .title{	
+	text-align: center;
+	color: #333333;
+	font-size: 1.25em;
+	margin-bottom: 0;
+}
+
+.js .fileinput-button.mod-dropzone input{
+	-moz-transform: translate(-352px, 28px) scale(4,3);
+	-o-transform: translate(-352px, 28px) scale(4,3);
+	-webkit-transform: translate(-352px, 28px) scale(4,3);
+	-ms-transform: translate(-352px, 28px) scale(4,3);
+	transform: translate(-352px, 28px) scale(4,3);
+	cursor:text;
+}
+
+.mod-content #fileupload .fileupload-files{
+	margin: 10px;
+	padding: 0;
+	position:relative;
+}
+
+.mod-content #fileupload .fileupload-files .file-row, .js-modale-sortable-helper{
+	padding: 0;
+	position: relative;
+	cursor: n-resize;
+	list-style: none;
+}
+
+.js-modale-sortable-helper{
+	margin: 0 0 0 -6%;
+}
+
+.mod-content #fileupload .fileupload-files .js-place-holder, .mod-content #fileupload .fileupload-files .ui-sortable-placeholder{
+	border:1px dashed #F90;
+	background-color:#FFC;
+	height: 2em;
+}
+
+.mod-content #fileupload .fileupload-files .file-row.file-type-pdf, .js-modale-sortable-helper.file-type-pdf{
+	background: url(img/layout/icons/pdf-icon.png) left center no-repeat;
+}
+
+.mod-content #fileupload .fileupload-files .file-row.file-type-pdf .file, .js-modale-sortable-helper.file-type-pdf .file{
+	padding-left: 3%;
+	width: 26%;
+	overflow: hidden;
+}
+
+.mod-content #fileupload .fileupload-files .file-row:hover{
+	background-color: transparent;
+	border-radius: 0;
+}
+.mod-content #fileupload .fileupload-files .file-row:last-child{
+	border-bottom: none;
+}
+.mod-content #fileupload .fileupload-files .file{
+	color: #000;
+	font-size: .9em;
+}
+
+.js-modale-sortable-helper .file{
+	color: #000;
+	font-size: 1em;
+}
+
+.file-row .file-data, .js-modale-sortable-helper .file-data{
+	position: absolute;
+	top: .5em;
+	width: 32%;
+	font-size: .8em;
+	left: 31%;
+	color: #000;
+}
+
+.js-modale-sortable-helper .file-data{
+	font-size: 1em;
+}
+
+.file-row.temp-row{
+	position: relative;
+	padding: .5em;
+}
+
+.file-row .progress-bar, .js-modale-sortable-helper .progress-bar{
+	position: relative;
+	background: #ffffff;	
+	border: 1px solid #707070;
+	box-shadow: inset 2px 2px 5px #999;
+	height: 1em;
+	width: 23%;
+	float: right;
+	margin-right: 14%;
+	z-index: 10;
+	margin-top: .45em;
+}
+
+.js-modale-sortable-helper .progress-bar{
+	margin-top: -.45em; 
+}
+
+/*.file-row .digits{
+	position: absolute;
+	right: 16%;
+	z-index: 20;
+	font-weight: bold;
+	color: #fff;
+	top: .4em;
+	display: block;
+	text-shadow: 1px 1px 2px #555;
+}*/
+
+.file-row .bar, .file-row .bar-f, .js-modale-sortable-helper .bar-f{
+	display: block;
+	background: #303030;
+	box-shadow: inset 2px 2px 5px #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	height: 1em;
+}
+
+.file-row .bar-full .bar-f, .js-modale-sortable-helper .bar-full .bar-f{
+	width: 100%;
+}
+
+.file-row.temp-row .bar, .js-modale-sortable-helper .bar{
+	background: #595959;
+}
+
+.file-row.temp-row .file-status{
+	
+}
+
+.file-movecontainer{
+	position: absolute;
+	top: .5em;
+	right: 3.25em;
+	width: 45px;
+	height: 6px;
+}
+
+.file-moveup, .file-movedown, .file-moveup-deact, .file-movedown-deact{
+	background: url('img/layout/icons/icons.png') left top no-repeat;
+	overflow: hidden;
+	width: 11px;
+	height: 6px;
+	text-indent: -5000px;
+	display: block;
+	position: absolute;
+	top: 0;
+	padding: 5px;
+}
+
+.file-moveup{
+	background-position: -81px -47px;
+	right: 0;
+}
+
+.file-movedown{
+	background-position: -81px -17px;
+	left: 0;
+}
+
+.file-moveup-deact{
+	background-position: -97px -47px;
+	right: 0;
+}
+
+.file-movedown-deact{
+	background-position: -97px -17px;
+	left: 0;
+}
+
+
+.mod-content #fileupload .fileupload-files .delete, .js-modale-sortable-helper .delete, .mod-content #fileupload .fileupload-files .delete-deact{
+	position: absolute;
+	top: .2em;
+	right: .35em;
+}
+
+.mod-content #fileupload .fileupload-files .btn, .js-modale-sortable-helper .btn{
+	background: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	float: none;
+	display: block;
+	position: relative;
+	width:22px;
+	height:22px;
+}
+
+.mod-content #fileupload .fileupload-files .btn span, .js-modale-sortable-helper .btn span{
+	text-indent: -5000px;
+	display: block;
+	position: absolute;
+}
+
+/*
+.mod-content #fileupload .fileupload-files .btn span.icon-trash, .js-modale-sortable-helper .btn span.icon-trash{
+	background: none;
+	text-indent: 0;
+	border-radius: 50px;
+	background: #434343;
+	box-shadow: 1px 1px 3px #777;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1em;
+	position: relative;
+	padding: 2px;
+}
+
+.mod-content #fileupload .fileupload-files .btn:hover span.icon-trash, .mod-content #fileupload .fileupload-files .btn:focus span.icon-trash{
+	background: #707070;
+	box-shadow: 1px 1px 3px rgba(24, 107, 168, 1);
+}
+*/
+.mod-content #fileupload .fileupload-files .btn span.icon-trash, .js-modale-sortable-helper .btn span.icon-trash {
+	display: block;
+	position: relative;
+	width:22px;
+	height:22px;
+	margin:0;
+	overflow:hidden;
+	background:url(img/layout/icons/icons.png) -46px -44px no-repeat;
+	text-indent: -10000em;
+	border:none;
+	cursor: pointer;
+}
+
+
+.mod-content #fileupload .fileupload-files .delete-deact .btn span.icon-trash{
+	background-position:-1px 0;
+}
+
+.fileup-validate{
+	display: none;
+	position: absolute;
+	bottom: -86px;
+	left: -20px;
+}
+
+.fileup-validate input[type=checkbox]{
+	margin: 10px 0 0 40px;
+	padding: 0;
+}
+
+.modal-body {
+padding: 1.5em 2em;
+}

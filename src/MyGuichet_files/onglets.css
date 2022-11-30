@@ -1,0 +1,275 @@
+/*!
+* Tabs styles
+* ========================================================================
+* 
+*/
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Onglets layout
+ */
+
+/*--main-content--*/
+.main-wrap #tabs{
+	margin-top:2em;
+}
+.main-wrap #tabs .tabs-content{
+	padding:20px;
+	background:#FFF;
+}
+.tabs-title {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/*-- tabs nav--*/
+
+#tabs-nav{
+	border-bottom: 1px solid #878787;	
+}
+#tabs-nav ul{
+	margin:0 0 0 15px;
+	list-style:none;
+}
+#tabs-nav li {
+	margin:0;	
+}
+
+#tabs-nav ul li:first-child a{
+	border-left: 1px solid #d7d7d7;
+}
+
+#tabs-nav ul li.is-tab-active:first-child a{
+	border-left: 1px solid #878787;
+}
+
+#tabs-nav ul li.is-tab-active:first-child:before{
+	content:" ";
+	position: absolute;
+	bottom: 0;
+	left: -15px;
+	width: 15px;
+	height: 100%;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-bottom: none;
+	border-radius: 2px 0 0 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	background: #e9f3fb;
+	cursor: default;
+}
+#tabs-nav ul li.is-tab-active:first-child:before{
+	height: 85%;
+}
+
+
+.tn-item{
+	display: inline-block;
+	vertical-align: bottom;
+	position: relative;
+}
+
+.tn-item.tn-add-btn{
+	margin-left: 3px;
+}
+
+.tn-item .notif{
+	box-shadow: 2px 2px 3px rgba(50,50,50,.4);
+	background: #ffffff;
+	padding:2px;
+	border-radius: 100px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:0.2em;
+	margin-top:-0.2em;
+	font-family: Calibri, Lucida, Arial, Helvetica, sans-serif;
+}
+
+.tn-item .notif span{
+	color: #ffffff;
+	font-size: .9em;
+	line-height: 1.5em;
+	font-weight:700;
+	box-shadow: inset -1px -1px 1px #75000a;
+	background: #d70013;
+	border-radius: 100px;
+	padding: 0 .6em;
+	display:inline-block;
+	
+	height:1.5em;
+}
+
+
+.tn-item a{
+
+	line-height: 1em;
+	color: #666666;
+	text-decoration: none;
+	padding: 0.55em 1.35em 0;
+	height:1.7em;
+	position: relative;
+	display: block;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-bottom: none;
+	background: #e9f3fb;
+}
+
+.tn-item.tn-add-btn a{
+
+	line-height: 1em;
+	color: #000000;
+	text-decoration: none;
+	padding: 0.55em .55em 0;
+	height:1.7em;
+	position: relative;
+	display: block;
+	border: 1px solid #7fb1d4;
+	border-bottom: none;
+	background: #d1e4f2;
+}
+
+.tn-item.is-notified a{
+	padding-right:10px;
+}
+
+.tn-item a:hover, .tn-item a:focus{
+	border-top-color: #ffcc00;
+	color: #000000;
+}
+
+.tn-item.is-tab-active{	
+	margin-left: -1px;
+}
+
+.tn-item.is-tab-active a{
+	color: #000000;
+	padding: .9em 1.35em 0; 
+	position: relative;
+	bottom: -1px;
+	background: #ffffff;
+	border: 1px solid #878787;
+	border-bottom: 1px solid #ffffff;
+}
+
+.tn-item.is-tab-active a:before, .tn-item.is-tab-active a:after{
+	content:" ";
+	width: 15px;
+	height: inherit;
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.tn-item:first-child.is-tab-active a:before, .tn-item:first-child.is-tab-active a:after{
+	cursor: default;
+}
+
+.tn-item.is-tab-active a:before{
+	background: url('img/layout/body/onglet-shadow.png') right top no-repeat;
+	right: -15px;
+}
+
+.tn-item.is-tab-active a:after{
+	left: -15px;	
+	background: url('img/layout/body/onglet-shadow.png') left top no-repeat;
+}
+
+/*--content of the content--*/
+
+
+/* file types : metadata in tabs top */
+.f-references{
+	float: right;
+	margin: 0 0 1em 0;
+}
+
+.f-references dt{
+	display: inline-block;
+	margin: 0 5px 0 15px;
+}
+
+.f-references dd{
+	display: inline-block;
+}
+
+.f-desc{
+	clear: both;
+	margin: 3em 0;	
+}
+
+.f-desc dd, .f-desc dt{
+	margin-bottom: 1em;
+	font-size: 1.1em;
+}
+
+.f-title{
+	color: #666666;
+}
+
+.f-info{
+	color: #000000;
+}
+
+.f-references .f-info{
+	font-family: Calibri,'Lucida Grande','Lucida Sans',Verdana,sans-serif;
+}
+
+.f-desc .f-title{
+	display: inline;
+	float: left;
+	margin-right: .5em;
+}
+
+.f-desc .f-info{
+	display: block;
+}
+
+
+.field-placeholder{
+	font-family: Calibri, sans-serif;
+	font-style: italic;
+	color: #666666;	
+	text-decoration: none;
+}
+
+
+.f-todos{
+	border: 1px solid #cddcfb;
+	border-radius: 2px 0 0 2px;
+	background: #f1f8ff;
+	margin:0;
+}
+
+.f-todo{
+	margin: .6em .5em .6em 2em;
+	list-style: none;
+	padding: 0;
+	list-style-image: url('img/layout/icons/actions-bullet.png');	
+}
+
+#tb-pieces-comp.dt, #tb-declarations.dt{
+	margin-bottom: 3em;
+}
+
+#tb-pieces-comp.dt tbody td, #tb-declarations.dt tbody td{
+	white-space: normal;
+}
+
+#tb-pieces-comp.dt tbody td:first-child, #tb-declarations.dt tbody td:first-child{
+	text-align: center;
+}
+
+.dt .statut-icon{
+	vertical-align: middle;	
+}
